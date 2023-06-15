@@ -1,16 +1,19 @@
 import React, { useEffect } from 'react';
 import { Box, Image, Text, Center, Flex, Select, Spacer, Grid } from '@chakra-ui/react';
 import DestinationCard from '../Components/DestinationCard';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { destinationGetData } from '../Redux/Destination/action';
+
+interface dispatchType{
+  dispatch:()=>void;
+}
 
 const Destinations = () => {
   const dispatch = useDispatch();
+  const destinations = useSelector((store) => console.log(store,'hello'));
 
-  useEffect(() => {
-    dispatch(destinationGetData());
-  }, []);
-
+  
+  
   return (
     <div>
       <Box position="relative">
@@ -32,17 +35,18 @@ const Destinations = () => {
         </Text>
       </Box>
       <Box margin="auto" marginTop="50px" width="90%" border="1px" borderColor="red">
-        <Flex justifyContent="space-between" alignItems="center">
+        <Flex>
           <Text fontSize="3xl" color="#1071db">
             <b>Popular Destinations</b>
           </Text>
+          <Spacer />
           <Select width="130px">
             <option value="">Beaches</option>
           </Select>
         </Flex>
 
         <Grid templateColumns="repeat(4,1fr)" gap={6}>
-          <DestinationCard />
+      
         </Grid>
       </Box>
     </div>
