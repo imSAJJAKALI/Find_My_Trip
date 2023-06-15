@@ -6,7 +6,7 @@ import Destinations from './Destinations'
 import Reviews from './Reviews'
 import ContactUs from './ContactUs'
 
-export default function mainRoute() {
+export default function MainRoute() {
   return (
     <Routes>
       <Route path='/' element={<Home/>}/>
