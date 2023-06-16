@@ -2,6 +2,7 @@ import React from 'react'
 import { Box,Image,Text } from '@chakra-ui/react'
 import Card1 from "./BookingCard/Card1"
 import Card_post from "./Download_card.png"
+import FlightWings from './flightwings.png'
 
 
 const Booking = ( ) => {
@@ -50,10 +51,10 @@ const Booking = ( ) => {
           </p>
           </div>
         </div>
-        <div style={{width:"30%", marginTop:'10px', marginBottom:"10px",  }} >
-          <div style={{width:"230px", height:"230px" , borderRadius:"100% / 80%", background:"#1071DB"}}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1J71Ufj7feHLHd1PYSBiPxC2NdOKKHidWnw&usqp=CAU" alt="" style={{width:"200px", height:"200px", borderRadius: "100% / 150%", margin:"auto", padding:"15px"}} />
-          </div>
+        <div style={{width:"30%",marginTop:"10px", marginRight:"10%"}} >
+         
+          <img src={FlightWings} alt="" style={{width:"200px", height:"200px", borderRadius: "100% / 150%", margin:"auto", padding:"15px"}} />
+        
        
       </div>
        </div>

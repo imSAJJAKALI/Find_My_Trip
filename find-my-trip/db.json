@@ -102,7 +102,7 @@
      
     },
     {
-      "id":7,
+      "id":8,
      "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Maldives_Fihalhohi_Island_4_l_662_1000.jpg",
      "name":"Lakshadweep",
      "days":"3 to 4 days",
@@ -113,7 +113,7 @@
      
     },
     {
-      "id":8,
+      "id":9,
      "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshdweep/mmt/activities/t_ufs/m_Andretti_lakshdweep_l_480_640.jpg",
      "name":"Lakshadweep",
      "days":"3 to 4 days",
@@ -124,7 +124,7 @@
      
     },
     {
-      "id":9,
+      "id":10,
      "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/activities/t_ufs/m_Lakshadweep_activity_Kadmath_l_364_550.jpg",
      "name":"Lakshadweep",
      "days":"3 to 4 days",
@@ -135,7 +135,7 @@
      
     },
     {
-      "id":10,
+      "id":11,
      "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/activities/t_ufs/m_Lakshadweep_activity_Kavaratti_l_360_640.jpg",
      "name":"Lakshadweep",
      "days":"3 to 4 days",
@@ -144,6 +144,85 @@
      "category":"beach",
      "details":"Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports."
      
+    },
+    {
+      "id":12,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/kasol/mmt/destination/m_destination-kasol-landscape_l_400_640.jpg",
+     "name":"Kasol",
+     "days":"1 to 2 days",
+     "price":6000,
+     "stars":4,
+     "category":"hills-station",
+     "details":"Enjoy a memorable mountain vacation at Kasol. You will love trekking, camping, festivals and parties. Kasol is also very popular among relaxation-seekers."
+     
+    },
+    {
+      "id":13,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/landsdown/mmt/destination/m_destination-lansdowne-landscape_l_400_640.jpg",
+     "name":"Lansdowne",
+     "days":"2 to 4 days",
+     "price":16000,
+     "stars":5,
+     "category":"hills-station",
+     "details":"Enjoy a memorable mountain vacation at Kasol. You will love trekking, camping, festivals and parties. Kasol is also very popular among relaxation-seekers."
+     
+    },
+    {
+      "id":14,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/dalhousie/mmt/destination/m_destination_dalhousie_landscape_l_362_579.jpg",
+     "name":"Dalhousie",
+     "days":"2 to 4 days",
+     "price":13000,
+     "stars":5,
+     "category":"hills-station",
+     "details":"Prepare to be wooed by the mesmerizing mountains of Leh. You will love sightseeing and the surreal vistas of snow-capped mountains. Leh is also known for its unique wildlife."
+     
+    },
+    {
+      "id":15,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/leh/mmt/destination/m_leh-landscape_l_400_640.jpg",
+     "name":"Leh",
+     "days":"2 to 4 days",
+     "price":33000,
+     "stars":5,
+     "category":"adventures",
+     "details":"Enjoy an adventure-packed vacay at Leh. You will love sightseeing and the surreal vistas of snow-capped mountains. The wildlife spottings at Leh are an added bonus."
+     
+    },
+    {
+      "id":16,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/dubai/mmt/destination/m_Dubai_activity_adventure_l_453_681.jpg",
+     "name":"Dubai",
+     "days":"6 to 8 days",
+     "price":53000,
+     "stars":5,
+     "category":"adventures",
+     "details":"Dubai is a haven for adventurous souls! You will love sightseeing and outdoor activities. Dubai also offers many culinary delights."
+     
+    },
+    {
+      "id":17,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/rishikesh/mmt/destination/m_rishikesh-landscape_l_400_640.jpg",
+     "name":"Rishikesh",
+     "days":"3 to 8 days",
+     "price":23000,
+     "stars":5,
+     "category":"adventures",
+     "details":"Rishikesh is a delight for adventure buffs. You can expect hot and humid weather. The pilgrimage sites at Rishikesh are also worth exploring."
+     
+    },
+    {
+      "id":18,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/singapore/mmt/destination/m_singapore-landscape_l_400_640.jpg",
+     "name":"Singapore",
+     "days":"3 to 8 days",
+     "price":43000,
+     "stars":5,
+     "category":"adventures",
+     "details":"Singapore is a delight for adventure buffs. You can expect hot and humid weather. The pilgrimage sites at Rishikesh are also worth exploring."
+     
     }
+    
+    
   ]
 }

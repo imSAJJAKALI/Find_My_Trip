@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Image, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import { DestinationType } from '../Redux/Destination/action'
 
-const DestinationCard = () => {
+const DestinationCard = ({id,image,name,days,price,stars,category,details}:DestinationType) => {
   return (
     <Box
   boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
@@ -10,15 +11,15 @@ const DestinationCard = () => {
   border={"2px"}
   borderColor={"#fb9216"}
 >
-  <Image src="https://hblimg.mmtcdn.com/content/hubble/img/destimgjun2022/mmt/activities/m_Goa_l_686_915.jpg" />
+  <Image src={image} height={"200px"} width={'100%'} />
   <Flex p="16px">
     <Text fontSize="24px" fontWeight="bold">
-      Goa
+      {name}
     </Text>
   </Flex>
   <Flex p="16px">
     <Text fontSize="16px" mr="auto" fontWeight="bold">
-      1 to 3 days
+     {days}
     </Text>
     <Text fontSize="16px" fontWeight="bold">
       * * * * *
@@ -26,7 +27,7 @@ const DestinationCard = () => {
   </Flex>
   <Flex p="16px" alignItems="center">
     <Text fontSize="20px" fontWeight="bold">
-      Price: ₹20,000
+      Price: ₹{price}
     </Text>
     <Spacer />
     <Button colorScheme="teal" size="md">

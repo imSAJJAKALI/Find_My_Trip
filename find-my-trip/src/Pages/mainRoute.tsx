@@ -5,15 +5,24 @@ import Booking from './Booking'
 import Destinations from './Destinations'
 import Reviews from './Reviews'
 import ContactUs from './ContactUs'
+import Navbar from '../Components/Navbar'
+import LoginPage from './Login'
 
 export default function MainRoute() {
   return (
+    <>
+   
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/Destinations' element={<Destinations/>}/>
-      <Route path='/Booking' element={<Booking/>}/>
-      <Route path='/Reviews' element={<Reviews/>}/>
-      <Route path='/ContactUs' element={<ContactUs/>}/>
+      <Route path='/destinations' element={<Destinations/>}/>
+      <Route path='/booking' element={<Booking/>}/>
+      <Route path='/reviews' element={<Reviews/>}/>
+      <Route path='/contact-Us' element={<ContactUs/>}/>
+      
+      <Route path='/login' element={<LoginPage/>}/>
+      
+
     </Routes>
+    </>
   )
 }

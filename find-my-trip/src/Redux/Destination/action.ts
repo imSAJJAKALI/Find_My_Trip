@@ -25,10 +25,11 @@ export interface DestinationType {
 // Define action types
 type DispatchType = Dispatch<AnyAction>;
 
-export const destinationGetData = () => async (dispatch: DispatchType) => {
+export const destinationGetData = async( {dispatch,category}:{dispatch:any,category:string})  => {
+  console.log(category)
   dispatch({ type: DESTINATION_DATA_LOADING });
   try {
-    const response: AxiosResponse<DestinationType[]> = await axios.get(url);
+    const response: AxiosResponse<DestinationType[]> = await axios.get(`${url}?category=${category}`);
     dispatch({ type: DESTINATION_DATA_SUCCESS, payload: response.data });
   } catch (error) {
     dispatch({ type: DESTINATION_DATA_ERROR });
