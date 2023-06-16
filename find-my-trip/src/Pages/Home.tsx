@@ -1,10 +1,14 @@
 import React from 'react'
+
+
+
 import style from '../styles/home.module.css'
 import { TabList, TabPanel, TabPanels, Tabs, Tab } from '@chakra-ui/react'
 import DownloadApp from '../Components/DownloadApp'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  
   const Navigate=useNavigate()
 
 
@@ -13,9 +17,8 @@ const Home = () => {
     Navigate('/Destinations')
   }
 
-
-
   return (
+
     <>
       <div className={style.TopDiv}>
         <div>
@@ -216,6 +219,7 @@ const Home = () => {
       <DownloadApp/>
       
     </>
+
   )
 }
 

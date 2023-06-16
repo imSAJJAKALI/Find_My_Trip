@@ -8,16 +8,22 @@ import {
 
 import { Logo } from "./Logo"
 import Navbar from "./Components/Navbar"
-import MainRoute from "./Pages/MainRoute"
+
+import Destinations from "./Pages/Destinations"
+import Home from "./Pages/Home"
+import MainRoute from "./Pages/mainRoute"
+import Footer from "./Components/Footer"
+
+
+
+
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Navbar/>
-      <MainRoute/>
+    <Navbar/>
+  <MainRoute/>
+  <Footer/>
       
-    </Box>
-    <h1>Neelesh</h1>
-    <h3>its Working........</h3>
+
   </ChakraProvider>
 )
