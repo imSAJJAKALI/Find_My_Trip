@@ -3,7 +3,8 @@ import { Box, VStack, HStack, UnorderedList, ListItem, List, Input, Button, Simp
 
 const Footer = () => {
   return (
-    <Box bg="#1071db" color="white" p={8} display="flex" justifyContent="space-between">
+    <Box bg="#1071db" color="white" p={8} display="flex" justifyContent="space-between" marginTop="20px" 
+     marginBottom="0px" >
       <VStack align="flex-start">
         <img src="https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb" alt="" width="250px" />
         <h5>REAL DESIGNS BY REAL ARISTS</h5>
