@@ -1,0 +1,164 @@
+.DownloadApp{
+    /* color: white; */
+    margin: 5% 5%;
+    background-color: #1071db;
+    padding: 30px 20px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+}
+.DownloadApp>div:nth-child(1){
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.DownloadApp>div:nth-child(1)>img:nth-child(2){
+   border-radius: 30px;
+   width: 40%;
+}
+.appLogo{
+    width: 40%;
+    position: absolute;
+}
+
+.downloadgrid{
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    gap: 1vw;
+    grid-template-rows: auto auto;
+}
+.downloadgrid>img:nth-child(2){
+   grid-row-start: 1;
+   grid-row-end: 3;
+   grid-column-start: 2;
+   width: 65%;
+   border-radius: 15px;
+   background-color: white;
+   
+}
+
+.headings>h2{
+    font-size: 60px !important;
+    font-weight: 900;
+    line-height: 70px;
+}
+.headings>h4{
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.headings>p{
+    font-size: 22px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1250px){
+    .DownloadApp>div:nth-child(1)>img:nth-child(2){
+        border-radius: 25px;
+     }
+}
+@media screen and (max-width: 900px){
+    .headings>h2{
+        font-size: 40px !important;
+        font-weight: 900;
+        line-height: 70px;
+    }
+    .headings>h4{
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+    .headings>p{
+        font-size: 15px;
+        line-height: 25px;
+    } 
+    .DownloadApp>div:nth-child(1)>img:nth-child(2){
+        border-radius: 20px;
+        width: 45%;
+     }
+     .DownloadApp{
+        padding: 10px 10px;
+        border-radius: 30px;
+    }
+    .downloadgrid>img:nth-child(2){
+        border-radius: 5px;
+     }
+}
+
+@media screen and (max-width: 600px){
+    .headings>h2{
+        font-size: 27px !important;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    .headings>h4{
+        font-size: 17px !important;
+        font-weight: 600;
+    }
+    .headings>p{
+        font-size: 13px;
+        line-height: 20px;
+    } 
+    .DownloadApp{
+        padding: 15px 10px;
+        grid-template-columns: 40% 60%;
+        border-radius: 30px;
+    }
+    .DownloadApp>div:nth-child(1)>img:nth-child(2){
+        border-radius: 13px;
+        width: 50%;
+     }
+}
+@media screen and (max-width: 400px){
+    .headings>h2{
+        font-size: 20px !important;
+        font-weight: 800;
+        line-height: 30px;
+    }
+    .headings>h4{
+        font-size: 15px !important;
+        font-weight: 600;
+    }
+    .headings>p{
+        font-size: 10px;
+        line-height: 20px;
+    } 
+    .DownloadApp{
+        padding: 15px 10px;
+        grid-template-columns: 30% 70%;
+        border-radius: 20px;
+    }
+    .DownloadApp>div:nth-child(1)>img:nth-child(2){
+        border-radius: 10px;
+        width: 80%;
+     }
+}
+@media screen and (max-width: 300px){
+    .headings>h2{
+        font-size: 20px !important;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    .headings>h4{
+        font-size: 15px !important;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    .headings>p{
+        font-size: 12px;
+        line-height: 20px;
+    } 
+    .DownloadApp{
+        padding: 5px;
+        display: block;
+        border-radius: 30px;
+    }
+    .DownloadApp>div:nth-child(1){
+        display: none;
+     }
+}

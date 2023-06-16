@@ -1,8 +1,20 @@
 import React from 'react'
 import style from '../styles/home.module.css'
 import { TabList, TabPanel, TabPanels, Tabs, Tab } from '@chakra-ui/react'
+import DownloadApp from '../Components/DownloadApp'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const Navigate=useNavigate()
+
+
+  function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    Navigate('/Destinations')
+  }
+
+
+
   return (
     <>
       <div className={style.TopDiv}>
@@ -13,7 +25,7 @@ const Home = () => {
             <p>We have more than 1 million happy customers around the world & <br /> More than 70+ Destinations around the globe
             </p>
             <div>
-              <button>{'Plan a Trip >'}</button>
+              <button onClick={()=>Navigate('/Destinations')}>{'Plan a Trip >'}</button>
               <button>Learn more</button>
             </div>
             <p><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span></p>
@@ -22,17 +34,17 @@ const Home = () => {
             <Tabs isFitted variant='unstyled' colorScheme='#1071DB'>
               <TabList>
                 <Tab _selected={{ bg: '#1071DB' }} p='10px 0px' m='1% 4%' borderRadius='10px'>
-                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">flightsmode</span>Flights</Tab>
+                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">flightsmode</span> <span className={style.tabName}>Flights</span></Tab>
                 <div style={{ backgroundColor: 'white', width: '3px', color: 'transparent', margin: '1% 0%' }}>|</div>
                 <Tab _selected={{ bg: '#1071DB' }} p='10px 0px' m='1% 4%' borderRadius='10px'>
-                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">apartment</span>Hotels</Tab>
+                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">apartment</span><span className={style.tabName}>Hotels</span></Tab>
                 <div style={{ backgroundColor: 'white', width: '3px', color: 'transparent', margin: '1% 0%' }}>|</div>
                 <Tab _selected={{ bg: '#1071DB' }} p='10px 0px' m='1% 4%' borderRadius='10px'>
-                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">directions_car</span>Transport</Tab>
+                  <span style={{ marginRight: '10px', transform: 'scale(1.5)' }} className="material-symbols-outlined">directions_car</span><span className={style.tabName}>Transport</span></Tab>
               </TabList>
               <TabPanels>
                 <TabPanel>
-                  <form className={style.FlightForm}>
+                  <form className={style.FlightForm} onSubmit={handleSubmit}>
                     <div className={style.locationSelecter}>
                       <label htmlFor="form">From</label>
                       <select id="form">
@@ -51,12 +63,12 @@ const Home = () => {
                     </div>
                     <div className={style.searchInput}>
                       <label htmlFor="serach">Search Flight</label>
-                      <input type="text" placeholder='Search' id='serach' />
+                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
                 <TabPanel>
-                  <form className={style.FlightForm}>
+                  <form className={style.FlightForm} onSubmit={handleSubmit}>
                     <div className={style.locationSelecter}>
                       <label htmlFor="form">Location</label>
                       <select id="form">
@@ -73,12 +85,12 @@ const Home = () => {
                     </div>
                     <div className={style.searchInput}>
                       <label htmlFor="serach">Search Hotel</label>
-                      <input type="text" placeholder='Search' id='serach' />
+                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
                 <TabPanel>
-                  <form className={style.FlightForm}>
+                  <form className={style.FlightForm} onSubmit={handleSubmit}>
                     <div className={style.locationSelecter}>
                       <label htmlFor="form">From</label>
                       <select id="form">
@@ -96,8 +108,8 @@ const Home = () => {
                       <input type='date' id="expected" />
                     </div>
                     <div className={style.searchInput}>
-                      <label htmlFor="serach">Search Transports</label>
-                      <input type="text" placeholder='Search' id='serach' />
+                      <label htmlFor="serach">Search</label>
+                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
@@ -199,7 +211,9 @@ const Home = () => {
             <button>View This Offer</button>
             <span>Starting from <br /> <b>$1000</b></span>
           </div>
-        </div>
+      </div>
+
+      <DownloadApp/>
       
     </>
   )

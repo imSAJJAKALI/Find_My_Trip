@@ -92,8 +92,9 @@
     padding-left: 40px;
 }
 .searchInput>input{
+    color:white;
+    background-color: #1071DB;
     padding-left: 20px;
-    background-image: url(https://tse4.mm.bing.net/th?id=OIP.iCU1qUxH0Oh8MwHw9ZsWigAAAA&pid=Api&P=0&h=180);
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: right 7px;
@@ -165,7 +166,7 @@
    text-align: end;
    color: #1071DB;
    position: relative;
-   bottom: 20px;
+   bottom: 7px;
    display: flex;
    align-items: center;
    justify-content: end;
@@ -219,13 +220,13 @@
 
 .tripPackage>div{
     display: grid;
-    grid-template-columns: repeat(4,23%);
+    grid-template-columns: repeat(4,23.5%);
     grid-template-rows: auto;
     justify-content: space-between;
 }
 .tripPackage_card{
     position: relative;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -268,7 +269,7 @@
     position: relative;
     background-image: url(https://pickyourtrail.com/blog/wp-content/uploads/2020/09/alex-kulikov-sPQbAah2f98-unsplash-scaled.jpg);
     background-size: cover;
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -307,4 +308,308 @@
 .packageBanner>div>span{
     font-size: 30px;
     color: #fba747;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .tripPackage_card:nth-child(4){
+        display: none;
+    }
+    .tripPackage>div{
+        grid-template-columns: repeat(3,32%);
+    }
+    .tripPackage_card>div{
+        padding: 10px;
+        position: absolute;
+        bottom: 15px;
+        width: 90%;
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .TopDiv>div{
+        padding: 0% 2%;
+    }
+    .headings>h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .headings>p:nth-child(3){
+        font-size: 17px;
+        /* line-height: 50px; */
+    }
+    .goldenHeading{
+        font-size: 25px;
+    }
+     .FlightForm>div>label{
+        font-size: 15px;
+     }
+     .searchInput>input,.calenderSelecter>input{
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+    .locationSelecter>select{
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 15px;
+        font-size: 17px;
+    }
+
+    .packageBanner>p>br{
+       display: none;
+    }
+
+
+
+    .popularDestinations>div{
+        display: grid;
+        grid-template-columns: repeat(2,49%) !important;
+        gap: 20px;
+        grid-template-rows: repeat(3,400px);
+        justify-content: space-between;
+      
+    }
+    .popular_card:nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: 2;
+     }
+     .popular_card:nth-child(6){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-start: 3;
+     }
+
+
+     .tripPackage_card:nth-child(4){
+         display: block;
+         display: flex;
+         justify-content: center;
+     }
+     .tripPackage>div{
+        grid-template-columns: repeat(2,49%);
+        grid-template-rows: repeat(2,auto);
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .tripPackage_card>div{
+        padding: 5px;
+        position: absolute;
+        bottom: 15px;
+        width: 90%;
+        font-size: 20px;
+    }
+    .tripPackage_card>div>div>button{
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+   
+    
+}
+@media screen and (max-width: 600px) {
+    .TopDiv>div{
+        padding: 0% 2%;
+    }
+    .headings>h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .headings>p:nth-child(3){
+        font-size: 15px;
+        padding-right: 15px;
+        /* line-height: 50px; */
+    }
+    .headings>p:nth-child(3)>br{
+        display: none;
+    }
+    .goldenHeading{
+        font-size: 25px;
+    }
+    .FlightForm>div>label{
+        font-size: 15px;
+    }
+    .FlightForm{
+        margin: 0% 1% 1% 1%;
+        padding: 10px;
+        border-radius: 15px;
+        grid-template-columns: repeat(2,49%);
+    }
+    .FlightForm>div{
+        padding: 0% 3%;
+    }
+    .locationSelecter:nth-child(2){
+        border-left: none;
+    }
+    .calenderSelecter{
+        border-left: none;
+        border-right: none;
+    }
+    .searchInput>input,.calenderSelecter>input{
+        height: 40px;
+        margin-top: 0px;
+        padding-left: 23px;
+        font-size: 17px;
+    }
+    .locationSelecter>select{
+        height: 40px;
+        margin-top: 0px;
+        padding-left: 18px;
+        font-size: 17px;
+    }
+    .headings>div>button{
+        font-size: 18px;
+        padding: 3px 20px;
+        border-radius: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .popularDestinations>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .popular_card:nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: 2;
+     }
+     .popular_card:nth-child(6){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-start: 3;
+     }
+
+    .popularDestinations>h2,.tripPackage>h2{
+        margin-top: 30px;
+       font-size: 25px;
+       font-weight: 700;
+    }
+    .popularDestinations>p,.tripPackage>p{
+       font-size: 15px;
+    }
+    .popularDestinations>span,.tripPackage>span{
+       font-size: 20px;
+       display: block;
+       text-align: end;
+       color: #1071DB;
+       position: relative;
+       bottom: 7px;
+       display: flex;
+       align-items: center;
+       justify-content: end;
+       cursor: pointer;
+    }
+    .popular_card:nth-child(5),.popular_card:nth-child(6){
+        display: none;
+    }
+
+
+
+    .tripPackage_card:nth-child(4){
+        display: none;
+    }
+    .tripPackage>div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .packageBanner>h3{
+        font-size: 30px;
+    }
+    .packageBanner>p:nth-child(1){
+        font-size: 15px;
+    }
+    .packageBanner>p{
+        font-size: 15px;
+    }
+    .packageBanner>div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .packageBanner>div>button{
+        padding: 0px 15px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .packageBanner>div>span{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .TopDiv>div{
+        padding: 0% 1%;
+    }
+    .headings>h2{
+        font-size: 25px;
+        line-height: 40px;
+        padding-right: 15px;
+    }
+    .headings>h2>br{
+        display: none;
+    }
+    .headings>p:nth-child(3){
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    .goldenHeading{
+        font-size: 20px;
+    }
+    .FlightForm>div>label{
+        font-size: 15px;
+    }
+    .FlightForm{
+        margin: 0% 1% 1% 1%;
+        padding: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .FlightForm>div{
+        padding: 0% 3%;
+    }
+    .searchInput>input,.calenderSelecter>input{
+        height: 35px;
+        margin-top: 0px;
+        padding-left: 35px;
+        font-size: 17px;
+    }
+    .locationSelecter>select{
+        height: 35px;
+        margin-top: 0px;
+        padding-left: 28px;
+        font-size: 17px;
+    }
+    .headings>div>button{
+        font-size: 15px;
+        padding: 3px 10px;
+        border-radius: 10px;
+        border: 1px solid #1071DB;
+    }
+    .tabName{
+        display: none;
+    }
+    
 }
