@@ -1,9 +1,14 @@
 import React from 'react'
+
+
+
 import style from '../styles/home.module.css'
 import { TabList, TabPanel, TabPanels, Tabs, Tab } from '@chakra-ui/react'
 
 const Home = () => {
+
   return (
+
     <>
       <div className={style.TopDiv}>
         <div>
@@ -202,6 +207,7 @@ const Home = () => {
         </div>
       
     </>
+
   )
 }
 

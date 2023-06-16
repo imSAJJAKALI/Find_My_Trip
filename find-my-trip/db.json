@@ -19,8 +19,131 @@
 
     }
   ] ,
-  
+
   "transport":[
     {}
+  ],
+  "destination":[
+    {
+      "id":1,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/destination/m_destination-goa-landscape_l_400_640.jpg",
+     "name":"Goa",
+     "days":"2 to 4 days",
+     "price":3500,
+     "stars":5,
+     "category":"beach",
+     "details":"Popularly known as India’s party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!"
+
+    },
+    {
+      "id":2,
+     "image":"https://1.bp.blogspot.com/-nePYI_qummY/YEymIP1AJbI/AAAAAAAABt4/pxSpjSikukE2S6CpvXSE3TrZJvd3hyQQgCLcBGAsYHQ/s1498/beach-1824855_1920.jpg",
+     "name":"Goa",
+     "days":"1 to 3 days",
+     "price":3000,
+     "stars":5,
+     "category":"beach",
+     "details":"Popularly known as India’s party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!"
+     
+    },
+    {
+      "id":3,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/DestMainImgLscape/mmt/activities/m_Goa_6_l_1130_1694.jpg",
+     "name":"Goa",
+     "days":"1 to 2 days",
+     "price":1500,
+     "stars":5,
+     "category":"beach",
+     "details":"Popularly known as India’s party capital, Goa seduces travellers from all around the globe with its boho beaches, ancient churches, majestic forts and unbeatable nightlife!"
+     
+    },
+    {
+      "id":4,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Underwater_Restaurant_3_l_606_910.jpg",
+     "name":"Maldives",
+     "days":"5 to 6 days",
+     "price":45000,
+     "stars":5,
+     "category":"beach",
+     "details":"Home to sun-kissed beaches, swaying palms, sculpted coral reefs, luxury resorts and thrilling water sports, the tropical paradise called Maldives is a string of beautiful islands."
+     
+    },
+    {
+      "id":5,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Sun_island_5_l_599_898.jpg",
+     "name":"Maldives",
+     "days":"3 to 4 days",
+     "price":35000,
+     "stars":5,
+     "category":"beach",
+     "details":"Home to sun-kissed beaches, swaying palms, sculpted coral reefs, luxury resorts and thrilling water sports, the tropical paradise called Maldives is a string of beautiful islands."
+     
+    },
+    {
+      "id":6,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Huvahendhoo%20Island_1_l_609_1000.jpg",
+     "name":"Maldives",
+     "days":"3 to 4 days",
+     "price":30000,
+     "stars":5,
+     "category":"beach",
+     "details":"Home to sun-kissed beaches, swaying palms, sculpted coral reefs, luxury resorts and thrilling water sports, the tropical paradise called Maldives is a string of beautiful islands."
+     
+    },
+    {
+      "id":7,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Maldives_Fihalhohi_Island_4_l_662_1000.jpg",
+     "name":"Maldives",
+     "days":"3 to 4 days",
+     "price":10000,
+     "stars":4,
+     "category":"beach",
+     "details":"Home to sun-kissed beaches, swaying palms, sculpted coral reefs, luxury resorts and thrilling water sports, the tropical paradise called Maldives is a string of beautiful islands."
+     
+    },
+    {
+      "id":7,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/maldives_img/mmt/activities/t_ufs/m_Maldives_Fihalhohi_Island_4_l_662_1000.jpg",
+     "name":"Lakshadweep",
+     "days":"3 to 4 days",
+     "price":20000,
+     "stars":4,
+     "category":"beach",
+     "details":"Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports."
+     
+    },
+    {
+      "id":8,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshdweep/mmt/activities/t_ufs/m_Andretti_lakshdweep_l_480_640.jpg",
+     "name":"Lakshadweep",
+     "days":"3 to 4 days",
+     "price":10000,
+     "stars":4,
+     "category":"beach",
+     "details":"Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports."
+     
+    },
+    {
+      "id":9,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/activities/t_ufs/m_Lakshadweep_activity_Kadmath_l_364_550.jpg",
+     "name":"Lakshadweep",
+     "days":"3 to 4 days",
+     "price":16000,
+     "stars":4,
+     "category":"beach",
+     "details":"Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports."
+     
+    },
+    {
+      "id":10,
+     "image":"https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/activities/t_ufs/m_Lakshadweep_activity_Kavaratti_l_360_640.jpg",
+     "name":"Lakshadweep",
+     "days":"3 to 4 days",
+     "price":16000,
+     "stars":4,
+     "category":"beach",
+     "details":"Settled off the Kerala coast on Laccadive sea, Lakshadweep translates to ‘a hundred thousand islands’. A club of 36 atolls and coral reefs, the nature tourism destination is known for preserved ecology and water sports."
+     
+    }
   ]
 }

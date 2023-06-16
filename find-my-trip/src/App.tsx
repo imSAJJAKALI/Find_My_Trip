@@ -8,7 +8,12 @@ import {
 
 import { Logo } from "./Logo"
 import Navbar from "./Components/Navbar"
+
+import Destinations from "./Pages/Destinations"
+import Home from "./Pages/Home"
+
 import MainRoute from "./Pages/MainRoute"
+
 
 
 export const App = () => (
@@ -16,7 +21,14 @@ export const App = () => (
     <Box textAlign="center" fontSize="xl">
       <Navbar/>
 
+      <Destinations/>
+     
+      
+
+    </Box>
+  
       <MainRoute/>
       
+
   </ChakraProvider>
 )
