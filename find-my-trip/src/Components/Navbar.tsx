@@ -31,7 +31,9 @@ const Navbar = () => {
       <div className={style.switchDiv}>
         <ColorModeSwitcher justifySelf="flex-end" />
         <span className="material-symbols-outlined">person</span>
-        <Button p='0px' bg='transparent' className={style.hymberger} onClick={onOpen}><span className="material-symbols-outlined">menu</span></Button>
+        <div className={style.hymberger}>
+          <Button p='0px' bg='transparent'  onClick={onOpen}><span className="material-symbols-outlined">menu</span></Button>
+        </div>
 
         <Drawer isOpen={isOpen} placement='right' onClose={onClose} size='xs'>
           <DrawerOverlay />

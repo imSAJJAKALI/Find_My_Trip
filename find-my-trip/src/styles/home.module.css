@@ -1,0 +1,310 @@
+
+.TopDiv{
+    background-image: url(https://c.pxhere.com/photos/88/cd/blue_clouds_lake_landscape_mountains_nature_river_scenic-936087.jpg!d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TopDiv>div{
+    width: 100%;
+    margin-top: 60px;
+    padding: 0% 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.goldenHeading{
+    color: #fba747;
+    font-size: 30px;
+    font-weight: 500;
+}
+.headings>h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.headings{
+   position: relative;
+}
+.headings>p:nth-child(5){
+   position: absolute;
+   right: 0;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: center;
+
+}
+.headings>p:nth-child(5)>span:nth-child(1){
+    color: #fba747;
+}
+.headings>div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.headings>div>button{
+    color: white;
+    border: 3px solid #1071DB;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+.headings>div>button:nth-child(1){
+    background-color: #1071DB;
+}
+
+.TabDiv{
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 30px;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+.FlightForm{
+    background-color: rgba(255, 255, 255, 0.932);
+    margin: 0% 1% 1% 1%;
+    padding: 20px;
+    border-radius: 25px;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.FlightForm>div{
+    padding: 0% 8%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.searchInput>input,.calenderSelecter>input{
+    border: 2px solid  #1071DB;
+    background-color: transparent;
+    color: #1071DB;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.searchInput>input{
+    padding-left: 20px;
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.iCU1qUxH0Oh8MwHw9ZsWigAAAA&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 7px;
+}
+.searchInput>input::placeholder{
+    color: #1071DB;
+}
+.locationSelecter>select{
+    border-radius: 5px;
+    border: 2px solid  #1071DB;
+    background-color: transparent;
+    color: #1071DB;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.locationSelecter:nth-child(1)>select{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.hJaATLpLEA3VjpR4dDEX_QHaHa&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 5px;
+}
+.locationSelecter:nth-child(2)>select{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.hJaATLpLEA3VjpR4dDEX_QHaHa&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 5px;
+}
+.calenderSelecter>input{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.WoR6vbCtNgaY5iJPoOYaPwHaHa&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 5px;
+}
+.locationSelecter:nth-child(2){
+    border-left: 2px solid #1071DB;
+}
+.calenderSelecter{
+    border-left: 2px solid #1071DB;
+    border-right: 2px solid #1071DB;
+}
+
+
+
+
+
+
+/* popular section */
+
+.popularDestinations,.tripPackage{
+    width: 100%;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+.popularDestinations>h2,.tripPackage>h2{
+    margin-top: 30px;
+   font-size: 40px;
+   font-weight: 700;
+}
+.popularDestinations>h2>span,.tripPackage>h2>span{
+  color: #1071DB;
+}
+.popularDestinations>p,.tripPackage>p{
+   font-size: 20px;
+}
+.popularDestinations>span,.tripPackage>span{
+   font-size: 20px;
+   display: block;
+   text-align: end;
+   color: #1071DB;
+   position: relative;
+   bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   cursor: pointer;
+}
+
+
+.popularDestinations>div{
+  display: grid;
+  grid-template-columns: repeat(4,24%-15px);
+  gap: 20px;
+  grid-template-rows: repeat(2,400px);
+  justify-content: space-between;
+
+}
+.popular_card{
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+.popular_card:nth-child(1){
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+.popular_card:nth-child(6){
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 1;
+   grid-row-start: 2;
+}
+.popular_card>h4{
+   position: absolute;
+   bottom: 20px;
+   left: 15px;
+   text-decoration: underline;
+   text-underline-offset: 7px;
+   font-size: 30px;
+   color: white;
+}
+.popular_card>img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+/* trip package */
+
+.tripPackage>div{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+.tripPackage_card{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tripPackage_card>img{
+    height: 100%;
+    width: 100%;
+}
+.tripPackage_card>div{
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(194, 194, 194, 0.591);
+    width: 85%;
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: start;
+}
+.tripPackage_card>div>div>span>b{
+    color: #1071DB;
+}
+.tripPackage_card>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+.tripPackage_card>div>div>button{
+    border: 2px solid #1071DB;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.tripPackage_card>div>div>button:hover{
+   background-color: #1071DB;
+   color: white;
+}
+
+
+.packageBanner{
+    position: relative;
+    background-image: url(https://pickyourtrail.com/blog/wp-content/uploads/2020/09/alex-kulikov-sPQbAah2f98-unsplash-scaled.jpg);
+    background-size: cover;
+    margin-top: 100px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    padding: 0% 5%;
+}
+.packageBanner>h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+.packageBanner>p:nth-child(1){
+    font-size: 20px;
+    font-weight: 500;
+    color: #fba747;
+}
+.packageBanner>p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.packageBanner>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.packageBanner>div>button{
+    background-color: #1071DB;
+    color: white;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 25px;
+}
+.packageBanner>div{
+    margin-top: 50px;
+}
+.packageBanner>div>span{
+    font-size: 30px;
+    color: #fba747;
+}
