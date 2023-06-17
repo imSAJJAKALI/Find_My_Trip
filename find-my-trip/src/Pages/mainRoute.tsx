@@ -7,6 +7,7 @@ import Reviews from './Reviews'
 import ContactUs from './ContactUs'
 import Navbar from '../Components/Navbar'
 import LoginPage from './Login'
+import SignupPage from './SignUp'
 
 export default function MainRoute() {
   return (
@@ -20,6 +21,8 @@ export default function MainRoute() {
       <Route path='/ContactUs' element={<ContactUs/>}/>
       
       <Route path='/login' element={<LoginPage/>}/>
+
+      <Route path='/signup' element={<SignupPage/>}/>
 
     </Routes>
     </>
