@@ -21,9 +21,7 @@ import Footer from "./Components/Footer"
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Navbar/>
-  <MainRoute/>
+   <MainRoute/>
   <Footer/>
-      
-
   </ChakraProvider>
 )

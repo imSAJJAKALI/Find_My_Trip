@@ -17,10 +17,9 @@ export default function MainRoute() {
       <Route path='/destinations' element={<Destinations/>}/>
       <Route path='/booking' element={<Booking/>}/>
       <Route path='/reviews' element={<Reviews/>}/>
-      <Route path='/contact-Us' element={<ContactUs/>}/>
+      <Route path='/ContactUs' element={<ContactUs/>}/>
       
       <Route path='/login' element={<LoginPage/>}/>
-      
 
     </Routes>
     </>

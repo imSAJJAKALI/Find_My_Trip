@@ -6,12 +6,14 @@ import {
     Text,
     Stack,
     Image,
+    Button,
+    ButtonGroup 
   } from '@chakra-ui/react';
   
 //   const IMAGE =
 //     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8Xj_5Ic5qDBl_6n_uHbUvUOu9nv0wIR8_Q&usqp=CAU';
   
-  export default function ProductSimple({img, Price, Price1}:any) {
+  export default function ProductSimple({img, Price, Price1, Brand, city}:any) {
     return (
       <Center py={12}>
         <Box
@@ -56,10 +58,10 @@ import {
           </Box>
           <Stack pt={10} align={'center'}>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-              Brand
+              {Brand}
             </Text>
             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-              Nice Chair, pink
+              {city}
             </Heading>
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={800} fontSize={'xl'}>
@@ -70,7 +72,10 @@ import {
               </Text>
             </Stack>
           </Stack>
+          <br />
+          <Button colorScheme='blue'>Book Now</Button>
         </Box>
+        
       </Center>
     );
   }
