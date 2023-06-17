@@ -1,5 +1,4 @@
-
-.TopDiv{
+.TopDiv {
     background-image: url(https://c.pxhere.com/photos/88/cd/blue_clouds_lake_landscape_mountains_nature_river_scenic-936087.jpg!d);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +8,8 @@
     justify-content: center;
     align-items: center;
 }
-.TopDiv>div{
+
+.TopDiv>div {
     width: 100%;
     margin-top: 60px;
     padding: 0% 5%;
@@ -19,71 +19,84 @@
     justify-content: space-evenly;
 
 }
-.goldenHeading{
+
+.goldenHeading {
     color: #fba747;
     font-size: 30px;
     font-weight: 500;
 }
-.headings>h2{
+
+.headings>h2 {
     font-size: 45px;
     font-weight: 700;
     line-height: 60px;
 }
-.headings{
-   position: relative;
+
+.headings {
+    position: relative;
+    text-align: center;
 }
-.headings>p:nth-child(5){
-   position: absolute;
-   right: 0;
-   top: 0;
-   display: flex;
-   flex-direction: column;
-   height: 100%;
-   justify-content: center;
+
+.headings>p:nth-child(5) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 
 }
-.headings>p:nth-child(5)>span:nth-child(1){
+
+.headings>p:nth-child(5)>span:nth-child(1) {
     color: #fba747;
 }
-.headings>div{
+
+.headings>div {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.headings>div>button{
+
+.headings>div>button {
     color: white;
     border: 3px solid #1071DB;
     padding: 3px 20px;
     border-radius: 20px;
 }
-.headings>div>button:nth-child(1){
+
+.headings>div>button:nth-child(1) {
     background-color: #1071DB;
 }
 
-.TabDiv{
+.TabDiv {
     background-color: rgba(255, 255, 255, 0.123);
     border-radius: 30px;
     /* padding: 10px; */
     box-sizing: border-box;
 }
-.FlightForm{
+
+.FlightForm {
     background-color: rgba(255, 255, 255, 0.932);
     margin: 0% 1% 1% 1%;
     padding: 20px;
     border-radius: 25px;
     color: black;
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(4, 25%);
 }
-.FlightForm>div{
+
+.FlightForm>div {
     padding: 0% 8%;
     text-align: start;
     display: flex;
     flex-direction: column;
 }
-.searchInput>input,.calenderSelecter>input{
-    border: 2px solid  #1071DB;
+
+.searchInput>input,
+.calenderSelecter>input {
+    border: 2px solid #1071DB;
     background-color: transparent;
     color: #1071DB;
     border-radius: 5px;
@@ -91,48 +104,56 @@
     margin-top: 10px;
     padding-left: 40px;
 }
-.searchInput>input{
-    color:white;
+
+.searchInput>input {
+    color: white;
     background-color: #1071DB;
     padding-left: 20px;
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: right 7px;
 }
-.searchInput>input::placeholder{
+
+.searchInput>input::placeholder {
     color: #1071DB;
 }
-.locationSelecter>select{
+
+.locationSelecter>select {
     border-radius: 5px;
-    border: 2px solid  #1071DB;
+    border: 2px solid #1071DB;
     background-color: transparent;
     color: #1071DB;
     height: 40px;
     margin-top: 10px;
     padding-left: 40px;
 }
-.locationSelecter:nth-child(1)>select{
+
+.locationSelecter:nth-child(1)>select {
     background-image: url(https://tse3.mm.bing.net/th?id=OIP.hJaATLpLEA3VjpR4dDEX_QHaHa&pid=Api&P=0&h=180);
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 5px;
 }
-.locationSelecter:nth-child(2)>select{
+
+.locationSelecter:nth-child(2)>select {
     background-image: url(https://tse3.mm.bing.net/th?id=OIP.hJaATLpLEA3VjpR4dDEX_QHaHa&pid=Api&P=0&h=180);
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 5px;
 }
-.calenderSelecter>input{
+
+.calenderSelecter>input {
     background-image: url(https://tse2.mm.bing.net/th?id=OIP.WoR6vbCtNgaY5iJPoOYaPwHaHa&pid=Api&P=0&h=180);
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 5px;
 }
-.locationSelecter:nth-child(2){
+
+.locationSelecter:nth-child(2) {
     border-left: 2px solid #1071DB;
 }
-.calenderSelecter{
+
+.calenderSelecter {
     border-left: 2px solid #1071DB;
     border-right: 2px solid #1071DB;
 }
@@ -144,73 +165,87 @@
 
 /* popular section */
 
-.popularDestinations,.tripPackage{
+.popularDestinations,
+.tripPackage {
     width: 100%;
     padding: 0% 5%;
     box-sizing: border-box;
 }
-.popularDestinations>h2,.tripPackage>h2{
+
+.popularDestinations>h2,
+.tripPackage>h2,.instaFollow>h2,.CustomersReveiw>div>h2 {
     margin-top: 30px;
-   font-size: 40px;
-   font-weight: 700;
+    font-size: 40px;
+    font-weight: 700;
 }
-.popularDestinations>h2>span,.tripPackage>h2>span{
-  color: #1071DB;
+
+.popularDestinations>h2>span,
+.tripPackage>h2>span,.instaFollow>h2>span,.CustomersReveiw>div>h2>span {
+    color: #1071DB;
 }
-.popularDestinations>p,.tripPackage>p{
-   font-size: 20px;
+
+.popularDestinations>p,
+.tripPackage>p ,.instaFollow>p{
+    font-size: 20px;
 }
-.popularDestinations>span,.tripPackage>span{
-   font-size: 20px;
-   display: block;
-   text-align: end;
-   color: #1071DB;
-   position: relative;
-   bottom: 7px;
-   display: flex;
-   align-items: center;
-   justify-content: end;
-   cursor: pointer;
+
+.popularDestinations>span,
+.tripPackage>span,.instaFollow>span,.CustomersReveiw>div>span {
+    font-size: 20px;
+    display: block;
+    text-align: end;
+    color: #1071DB;
+    position: relative;
+    bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
 }
 
 
-.popularDestinations>div{
-  display: grid;
-  grid-template-columns: repeat(4,24%-15px);
-  gap: 20px;
-  grid-template-rows: repeat(2,400px);
-  justify-content: space-between;
+.popularDestinations>div {
+    display: grid;
+    grid-template-columns: repeat(4, 24%-15px);
+    gap: 20px;
+    grid-template-rows: repeat(2, 400px);
+    justify-content: space-between;
 
 }
-.popular_card{
+
+.popular_card {
     width: 100%;
     overflow: hidden;
     height: 400px;
     position: relative;
     border-radius: 20px;
 }
-.popular_card:nth-child(1){
-   grid-column-start: 1;
-   grid-column-end: 3;
+
+.popular_card:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-.popular_card:nth-child(6){
-   grid-column-start: 3;
-   grid-column-end: 5;
-   grid-row-start: 1;
-   grid-row-start: 2;
+
+.popular_card:nth-child(6) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-start: 2;
 }
-.popular_card>h4{
-   position: absolute;
-   bottom: 20px;
-   left: 15px;
-   text-decoration: underline;
-   text-underline-offset: 7px;
-   font-size: 30px;
-   color: white;
+
+.popular_card>h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    font-size: 30px;
+    color: white;
 }
-.popular_card>img{
-  height: 100%;
-  width: 100%;
+
+.popular_card>img {
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -218,13 +253,14 @@
 
 /* trip package */
 
-.tripPackage>div{
+.tripPackage>div {
     display: grid;
-    grid-template-columns: repeat(4,23.5%);
+    grid-template-columns: repeat(4, 23.5%);
     grid-template-rows: auto;
     justify-content: space-between;
 }
-.tripPackage_card{
+
+.tripPackage_card {
     position: relative;
     height: 400px;
     overflow: hidden;
@@ -232,11 +268,13 @@
     display: flex;
     justify-content: center;
 }
-.tripPackage_card>img{
+
+.tripPackage_card>img {
     height: 100%;
     width: 100%;
 }
-.tripPackage_card>div{
+
+.tripPackage_card>div {
     padding: 10px;
     position: absolute;
     bottom: 20px;
@@ -246,26 +284,30 @@
     font-weight: 600;
     text-align: start;
 }
-.tripPackage_card>div>div>span>b{
+
+.tripPackage_card>div>div>span>b {
     color: #1071DB;
 }
-.tripPackage_card>div>div{
+
+.tripPackage_card>div>div {
     display: flex;
     justify-content: space-between;
 }
-.tripPackage_card>div>div>button{
+
+.tripPackage_card>div>div>button {
     border: 2px solid #1071DB;
     border-radius: 20px;
     padding: 5px 10px;
     font-size: 15px;
 }
-.tripPackage_card>div>div>button:hover{
-   background-color: #1071DB;
-   color: white;
+
+.tripPackage_card>div>div>button:hover {
+    background-color: #1071DB;
+    color: white;
 }
 
 
-.packageBanner{
+.packageBanner {
     position: relative;
     background-image: url(https://pickyourtrail.com/blog/wp-content/uploads/2020/09/alex-kulikov-sPQbAah2f98-unsplash-scaled.jpg);
     background-size: cover;
@@ -277,47 +319,258 @@
     height: 70vh;
     padding: 0% 5%;
 }
-.packageBanner>h3{
+
+.packageBanner>h3 {
     font-size: 40px;
     font-weight: 700;
 }
-.packageBanner>p:nth-child(1){
+
+.packageBanner>p:nth-child(1) {
     font-size: 20px;
     font-weight: 500;
     color: #fba747;
 }
-.packageBanner>p{
+
+.packageBanner>p {
     font-size: 20px;
     font-weight: 500;
 }
-.packageBanner>div{
+
+.packageBanner>div {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.packageBanner>div>button{
+
+.packageBanner>div>button {
     background-color: #1071DB;
     color: white;
     height: 50px;
     padding: 0px 20px;
     border-radius: 25px;
 }
-.packageBanner>div{
+
+.packageBanner>div {
     margin-top: 50px;
 }
-.packageBanner>div>span{
+
+.packageBanner>div>span {
     font-size: 30px;
     color: #fba747;
 }
 
 
 
+/* Quick & Safe */
+.QuickSafe {
+    display: grid;
+    padding: 0% 5%;
+    margin-top: 70px;
+    gap: 3%;
+    grid-template-columns: 48% 48%;
+}
+
+.QS_leftDiv>h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.QS_leftDiv>h3>span,
+.QS_leftDiv>p>span {
+    color: #1071DB;
+}
+
+.QS_leftDiv>p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.QS_leftDiv>div {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 10% 85%;
+    gap: 20px;
+}
+
+.QS_leftDiv>div>span {
+    color: #1071DB;
+    background-color: rgba(135, 207, 235, 0.612);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 80%;
+}
+
+.QS_leftDiv>div>div>h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.QS_leftDiv>div>div>p {
+    font-size: 18px;
+}
 
 
 
 
+.QS_BigCard {
+    background-color: white;
+    color: black;
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.QS_BigCard>img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.QS_BigCard>div:nth-child(4)>span {
+    padding: 10px;
+    border-radius: 100%;
+    margin-left: 20px;
+    color: black;
+    margin-bottom: 5px;
+    background-color: lightgrey;
+}
+.QS_BigCard>div:nth-child(4){
+    margin: 20px 0px;
+}
+
+.QS_BigCard>p>span {
+    position: relative;
+    margin-right: 5px;
+    top: 5px;
+}
+
+.QS_smallCard {
+    position: absolute;
+    background-color: white;
+    color: black;
+    bottom: 30px;
+    left: 80%;
+    width: 230px;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 25px;
+}
+
+.QS_smallCard>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
 
 
+
+
+/* Follow on instagram */
+.instaFollow{
+    padding: 0% 5%;
+}
+
+
+
+
+.CustomersReveiw>div:nth-child(1){
+    padding: 0% 5%;
+}
+.CustomersReveiw{
+    margin-top: 50px;
+}
+.CustomersReveiw>div>h2{
+    position: relative;
+    top: 5px;
+}
+.reviewDiv{
+    color: white;
+    background-image: url(https://www.hdwallpapers.in/thumbs/2014/nightfall_mountain_sea_moon-t2.jpg);
+    background-size: cover;
+}
+.reviewDiv>div:nth-child(1){
+    display: grid;
+    margin: 0% 5%;
+    padding: 70px 0px;
+    grid-template-columns: repeat(4,23%);
+    justify-content: space-around;
+}
+.reviewCard>img{
+    width: 30%;
+    border-radius: 100%;
+    border: 4px solid #1071DB;
+    padding: 3px;
+}
+.reviewCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    padding-bottom: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+.reviewCard::before{
+    content: ',,';
+    position: absolute;
+    font-size: 100px;
+    right: 20px ;
+    top: -70px;
+    font-weight: 1000;
+    color: rgb(234, 233, 233);
+}
+.reviewCard>p:nth-child(3){
+    color: rgb(199, 173, 26);
+}
+.reviewCard>p:nth-child(4){
+    font-size: 20px;
+}
+.newsLetter{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.newsLetter>h2{
+    font-size: 45px;
+    font-weight: 600;
+}
+.newsLetter>p{
+    font-size: 25px;
+}
+.newsLetter>div{
+    background-color: white;
+    border-radius: 30px;
+    width: 700px;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 70% 28%;
+    overflow: hidden;
+}
+.newsLetter>div>input{
+   background-color: transparent;
+   height: 100%;
+   padding-left: 30px;
+   border: none;
+   color: black;
+}
+.newsLetter>div>button{
+  background-color: #1071DB;
+  margin: 5px;
+  border-radius: 30px;
+}
 
 
 
@@ -327,289 +580,456 @@
 
 
 @media screen and (max-width: 1250px) {
-    .tripPackage_card:nth-child(4){
+    .tripPackage_card:nth-child(4) {
         display: none;
     }
-    .tripPackage>div{
-        grid-template-columns: repeat(3,32%);
+
+    .tripPackage>div {
+        grid-template-columns: repeat(3, 32%);
     }
-    .tripPackage_card>div{
+
+    .tripPackage_card>div {
         padding: 10px;
         position: absolute;
         bottom: 15px;
         width: 90%;
         font-size: 23px;
     }
+
+
+
+    .QS_leftDiv>h3 {
+        font-size: 40px;
+    }
+
+    .QS_leftDiv>p {
+        font-size: 20px;
+    }
+
+    .QS_leftDiv>div {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .QS_leftDiv>div>span {
+        font-size: 20px;
+        height: 80%;
+    }
+
+    .QS_leftDiv>div>div>h4 {
+        font-size: 17px;
+    }
+
+    .QS_leftDiv>div>div>p {
+        font-size: 14px;
+    }
+    .reviewCard>p:nth-child(4){
+        font-size: 15px;
+    }
+
 }
+
 @media screen and (max-width: 900px) {
-    .TopDiv>div{
+    .TopDiv>div {
         padding: 0% 2%;
     }
-    .headings>h2{
+
+    .headings>h2 {
         font-size: 40px;
         line-height: 50px;
     }
-    .headings>p:nth-child(3){
+
+    .headings>p:nth-child(3) {
         font-size: 17px;
         /* line-height: 50px; */
     }
-    .goldenHeading{
+
+    .goldenHeading {
         font-size: 25px;
     }
-     .FlightForm>div>label{
+
+    .FlightForm>div>label {
         font-size: 15px;
-     }
-     .searchInput>input,.calenderSelecter>input{
+    }
+
+    .searchInput>input,
+    .calenderSelecter>input {
         height: 40px;
         margin-top: 10px;
         padding-left: 20px;
         font-size: 17px;
     }
-    .locationSelecter>select{
+
+    .locationSelecter>select {
         height: 40px;
         margin-top: 10px;
         padding-left: 15px;
         font-size: 17px;
     }
 
-    .packageBanner>p>br{
-       display: none;
+    .packageBanner>p>br {
+        display: none;
     }
 
 
 
-    .popularDestinations>div{
+    .popularDestinations>div {
         display: grid;
-        grid-template-columns: repeat(2,49%) !important;
+        grid-template-columns: repeat(2, 49%) !important;
         gap: 20px;
-        grid-template-rows: repeat(3,400px);
+        grid-template-rows: repeat(3, 400px);
         justify-content: space-between;
-      
+
     }
-    .popular_card:nth-child(1){
+
+    .popular_card:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 2;
-     }
-     .popular_card:nth-child(6){
+    }
+
+    .popular_card:nth-child(6) {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-start: 3;
-     }
+    }
 
 
-     .tripPackage_card:nth-child(4){
-         display: block;
-         display: flex;
-         justify-content: center;
-     }
-     .tripPackage>div{
-        grid-template-columns: repeat(2,49%);
-        grid-template-rows: repeat(2,auto);
+    .tripPackage_card:nth-child(4) {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tripPackage>div {
+        grid-template-columns: repeat(2, 49%);
+        grid-template-rows: repeat(2, auto);
         gap: 10px;
         justify-content: space-between;
     }
-    .tripPackage_card>div{
+
+    .tripPackage_card>div {
         padding: 5px;
         position: absolute;
         bottom: 15px;
         width: 90%;
         font-size: 20px;
     }
-    .tripPackage_card>div>div>button{
+
+    .tripPackage_card>div>div>button {
         padding: 5px 5px;
         font-size: 15px;
     }
-   
-    
+
+
+
+    .QuickSafe {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0% 5%;
+    }
+
+    .reviewDiv>div:nth-child(1){
+        margin: 0% 2%;
+        grid-template-columns: repeat(2,48%);
+        gap: 10px;
+    }
+    .newsLetter>h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .newsLetter>p{
+        font-size: 20px;
+    }
+    .newsLetter>div{
+        border-radius: 25px;
+        width: 85%;
+        height: 50px;
+    }
+
+
 }
+
 @media screen and (max-width: 600px) {
-    .TopDiv>div{
+    .TopDiv>div {
         padding: 0% 2%;
     }
-    .headings>h2{
+
+    .headings>h2 {
         font-size: 30px;
         line-height: 40px;
     }
-    .headings>p:nth-child(3){
+
+    .headings>p:nth-child(3) {
         font-size: 15px;
         padding-right: 15px;
         /* line-height: 50px; */
     }
-    .headings>p:nth-child(3)>br{
+
+    .headings>p:nth-child(3)>br {
         display: none;
     }
-    .goldenHeading{
+
+    .goldenHeading {
         font-size: 25px;
     }
-    .FlightForm>div>label{
+
+    .FlightForm>div>label {
         font-size: 15px;
     }
-    .FlightForm{
+
+    .FlightForm {
         margin: 0% 1% 1% 1%;
         padding: 10px;
         border-radius: 15px;
-        grid-template-columns: repeat(2,49%);
+        grid-template-columns: repeat(2, 49%);
     }
-    .FlightForm>div{
+
+    .FlightForm>div {
         padding: 0% 3%;
     }
-    .locationSelecter:nth-child(2){
+
+    .locationSelecter:nth-child(2) {
         border-left: none;
     }
-    .calenderSelecter{
+
+    .calenderSelecter {
         border-left: none;
         border-right: none;
     }
-    .searchInput>input,.calenderSelecter>input{
+
+    .searchInput>input,
+    .calenderSelecter>input {
         height: 40px;
         margin-top: 0px;
         padding-left: 23px;
         font-size: 17px;
     }
-    .locationSelecter>select{
+
+    .locationSelecter>select {
         height: 40px;
         margin-top: 0px;
         padding-left: 18px;
         font-size: 17px;
     }
-    .headings>div>button{
+
+    .headings>div>button {
         font-size: 18px;
         padding: 3px 20px;
         border-radius: 20px;
     }
+
+
+
+    .QS_smallCard {
+        display: none;
+    }
+
+    .CustomersReveiw>div>h2{
+       font-size: 33px;
+    }
     
+
 }
 
 @media screen and (max-width: 500px) {
-    .popularDestinations>div{
+    .popularDestinations>div {
         display: flex;
         flex-direction: column;
     }
-    .popular_card:nth-child(1){
+
+    .popular_card:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 2;
-     }
-     .popular_card:nth-child(6){
+    }
+
+    .popular_card:nth-child(6) {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-start: 3;
-     }
+    }
 
-    .popularDestinations>h2,.tripPackage>h2{
+    .popularDestinations>h2,
+    .tripPackage>h2 {
         margin-top: 30px;
-       font-size: 25px;
-       font-weight: 700;
+        font-size: 25px;
+        font-weight: 700;
     }
-    .popularDestinations>p,.tripPackage>p{
-       font-size: 15px;
+
+    .popularDestinations>p,
+    .tripPackage>p {
+        font-size: 15px;
     }
-    .popularDestinations>span,.tripPackage>span{
-       font-size: 20px;
-       display: block;
-       text-align: end;
-       color: #1071DB;
-       position: relative;
-       bottom: 7px;
-       display: flex;
-       align-items: center;
-       justify-content: end;
-       cursor: pointer;
+
+    .popularDestinations>span,
+    .tripPackage>span {
+        font-size: 20px;
+        display: block;
+        text-align: end;
+        color: #1071DB;
+        position: relative;
+        bottom: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor: pointer;
     }
-    .popular_card:nth-child(5),.popular_card:nth-child(6){
+
+    .popular_card:nth-child(5),
+    .popular_card:nth-child(6) {
         display: none;
     }
 
 
 
-    .tripPackage_card:nth-child(4){
+    .tripPackage_card:nth-child(4) {
         display: none;
     }
-    .tripPackage>div{
+
+    .tripPackage>div {
         display: flex;
         flex-direction: column;
     }
-    
 
-    .packageBanner>h3{
+
+    .packageBanner>h3 {
         font-size: 30px;
     }
-    .packageBanner>p:nth-child(1){
+
+    .packageBanner>p:nth-child(1) {
         font-size: 15px;
     }
-    .packageBanner>p{
+
+    .packageBanner>p {
         font-size: 15px;
     }
-    .packageBanner>div{
+
+    .packageBanner>div {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
         gap: 20px;
     }
-    .packageBanner>div>button{
+
+    .packageBanner>div>button {
         padding: 0px 15px;
         border-radius: 20px;
         font-size: 20px;
     }
-    .packageBanner>div>span{
+
+    .packageBanner>div>span {
         font-size: 25px;
+    }
+
+
+    .CustomersReveiw>div>h2{
+       font-size: 20px;
+    }
+    .CustomersReveiw>div>span{
+       font-size: 15px;
+    }
+    .reviewDiv>div:nth-child(1){
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .reviewCard:nth-child(1){
+        display: none;
+    }
+
+    .newsLetter>div>button{
+        font-size: 15px;
+        margin: 3px;
+    }
+    .newsLetter>h2{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .newsLetter>p{
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .TopDiv>div{
+    .TopDiv>div {
         padding: 0% 1%;
     }
-    .headings>h2{
+
+    .headings>h2 {
         font-size: 25px;
         line-height: 40px;
         padding-right: 15px;
     }
-    .headings>h2>br{
+
+    .headings>h2>br {
         display: none;
     }
-    .headings>p:nth-child(3){
+
+    .headings>p:nth-child(3) {
         font-size: 12px;
         padding-right: 15px;
     }
-    .goldenHeading{
+
+    .goldenHeading {
         font-size: 20px;
     }
-    .FlightForm>div>label{
+
+    .FlightForm>div>label {
         font-size: 15px;
     }
-    .FlightForm{
+
+    .FlightForm {
         margin: 0% 1% 1% 1%;
         padding: 10px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
     }
-    .FlightForm>div{
+
+    .FlightForm>div {
         padding: 0% 3%;
     }
-    .searchInput>input,.calenderSelecter>input{
+
+    .searchInput>input,
+    .calenderSelecter>input {
         height: 35px;
         margin-top: 0px;
         padding-left: 35px;
         font-size: 17px;
     }
-    .locationSelecter>select{
+
+    .locationSelecter>select {
         height: 35px;
         margin-top: 0px;
         padding-left: 28px;
         font-size: 17px;
     }
-    .headings>div>button{
+
+    .headings>div>button {
         font-size: 15px;
         padding: 3px 10px;
         border-radius: 10px;
         border: 1px solid #1071DB;
     }
-    .tabName{
+
+    .tabName {
         display: none;
     }
+
+
+    .QS_BigCard {
+        width: 90%;
+        margin: auto;
+        font-size: 15px;
+    }
+    .QS_BigCard>div:nth-child(4)>span {
+        margin-right: 10px;
+    }
     
+    .newsLetter>div>button{
+        font-size: 10px;
+      }
 }
