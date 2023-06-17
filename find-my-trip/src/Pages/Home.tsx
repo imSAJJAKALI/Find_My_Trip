@@ -8,11 +8,11 @@ import DownloadApp from '../Components/DownloadApp'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
-  
-  const Navigate=useNavigate()
+
+  const Navigate = useNavigate()
 
 
-  function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     Navigate('/Destinations')
   }
@@ -28,7 +28,7 @@ const Home = () => {
             <p>We have more than 1 million happy customers around the world & <br /> More than 70+ Destinations around the globe
             </p>
             <div>
-              <button onClick={()=>Navigate('/Destinations')}>{'Plan a Trip >'}</button>
+              <button onClick={() => Navigate('/Destinations')}>{'Plan a Trip >'}</button>
               <button>Learn more</button>
             </div>
             <p><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span></p>
@@ -66,7 +66,7 @@ const Home = () => {
                     </div>
                     <div className={style.searchInput}>
                       <label htmlFor="serach">Search Flight</label>
-                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
+                      <input style={{ paddingLeft: '0px' }} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
@@ -88,7 +88,7 @@ const Home = () => {
                     </div>
                     <div className={style.searchInput}>
                       <label htmlFor="serach">Search Hotel</label>
-                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
+                      <input style={{ paddingLeft: '0px' }} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
@@ -112,7 +112,7 @@ const Home = () => {
                     </div>
                     <div className={style.searchInput}>
                       <label htmlFor="serach">Search</label>
-                      <input style={{paddingLeft:'0px'}} type="submit" value='Search' id='serach' />
+                      <input style={{ paddingLeft: '0px' }} type="submit" value='Search' id='serach' />
                     </div>
                   </form>
                 </TabPanel>
@@ -176,7 +176,7 @@ const Home = () => {
               <p>Dubai, UAE</p>
               <p>3 Nights 2 Days</p>
               <div>
-              <span>from<b>$500</b></span>
+                <span>from<b>$500</b></span>
                 <button>Find Details</button>
               </div>
             </div>
@@ -187,7 +187,7 @@ const Home = () => {
               <p>Madrid, Spain</p>
               <p>4 Nights 4 Days</p>
               <div>
-              <span>from<b>$600</b></span>
+                <span>from<b>$600</b></span>
                 <button>Find Details</button>
               </div>
             </div>
@@ -198,7 +198,7 @@ const Home = () => {
               <p>Venice, Italy</p>
               <p>2 Nights 3 Days</p>
               <div>
-              <span>from<b>$300</b></span>
+                <span>from<b>$300</b></span>
                 <button>Find Details</button>
               </div>
             </div>
@@ -207,17 +207,138 @@ const Home = () => {
       </div>
 
       <div className={style.packageBanner}>
-          <p>Southern aegean sea, Santorini, Greece</p>
-          <h3>3 Nights Oasis Hotel</h3>
-          <p>From all Inclusive vacation to safari in Africa or escorted tours in <br /> furoan ,carefine vacations provides in best travel packages.</p>
-          <div>
-            <button>View This Offer</button>
-            <span>Starting from <br /> <b>$1000</b></span>
-          </div>
+        <p>Southern aegean sea, Santorini, Greece</p>
+        <h3>3 Nights Oasis Hotel</h3>
+        <p>From all Inclusive vacation to safari in Africa or escorted tours in <br /> furoan ,carefine vacations provides in best travel packages.</p>
+        <div>
+          <button>View This Offer</button>
+          <span>Starting from <br /> <b>$1000</b></span>
+        </div>
       </div>
 
-      <DownloadApp/>
-      
+      <div className={style.QuickSafe}>
+        <div className={style.QS_leftDiv}>
+          <h3>Quick <span>& Safe</span></h3>
+          <p>Start Your Next Trip In <span>3 Easy Steps</span></p>
+          <div>
+            <span className="material-symbols-outlined">flag</span>
+            <div>
+              <h4>Choose Destination</h4>
+              <p>We helpe you to choose your next holiday destination, trip help you to make the best of your journey</p>
+            </div>
+            <span className="material-symbols-outlined">account_balance_wallet</span>
+            <div>
+              <h4>Make Payment</h4>
+              <p>We provide you multiple online secure payment methods after completing payment method you are ready to go</p>
+            </div>
+            <span className="material-symbols-outlined">flight_takeoff</span>
+            <div>
+              <h4>Reach Airport On Selected Date</h4>
+              <p>On selected date reach airport before 2 hours of departure, complete your boarding process,it will help you to check in plane on time</p>
+            </div>
+          </div>
+        </div>
+        <div className={style.QS_rightDiv}>
+          <div className={style.QS_BigCard}>
+            <img src="https://c.stocksy.com/a/nlM300/z9/802515.jpg" alt="" />
+            <p><b>Trip To Canada</b></p>
+            <p>01-06 June | by Find My Trip</p>
+            <div>
+              <span className="material-symbols-outlined">eco</span>
+              <span className="material-symbols-outlined">map</span>
+              <span className="material-symbols-outlined">send</span>
+            </div>
+            <p><span className="material-symbols-outlined">group_add</span> 45 peoples are going</p>
+            <div className={style.QS_smallCard}>
+              <img src="https://c.stocksy.com/a/nlM300/z9/802515.jpg" alt="" />
+              <div>
+                <p>ongoing</p>
+                <p><b>Trip To Canada</b></p>
+                <p><span>40% </span> Completed</p>
+                <input type="range" value='40' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <DownloadApp />
+
+      <div className={style.popularDestinations} style={{marginBottom:'30px'}}>
+      <h2>Follow Us<span> ON Instagram</span></h2>
+        <p>Find hear all our happy customers shared their golden memories with us</p>
+        <span>View All <span className="material-symbols-outlined">trending_flat</span></span>
+        <div>
+          <div className={style.popular_card}>
+            <img src="https://thumbs.dreamstime.com/b/summer-car-trip-two-young-people-enjoy-vacation-couple-tourist-map-enjoying-156270951.jpg" alt="" />
+           
+          </div>
+          <div className={style.popular_card}>
+            <img src="https://image.freepik.com/free-photo/stylish-young-man-enjoying-trip_23-2148727089.jpg" alt="" />
+            
+          </div>
+          <div className={style.popular_card}>
+            <img src="https://i.pinimg.com/originals/37/3b/56/373b56517b7ebd4c1c0ebc64e7368539.jpg" alt="" />
+            
+          </div>
+          <div className={style.popular_card}>
+            <img src="https://cdn.shopify.com/s/files/1/0059/0056/6597/products/photo-id-2005746647109-woman-enjoying-herself-on-road-trip_1200x800.jpg?v=1563840217" alt="" />
+            
+          </div>
+          <div className={style.popular_card}>
+            <img src="https://img.freepik.com/free-photo/pretty-young-woman-enjoying-road-trip_23-2148732199.jpg?size=338&ext=jpg" alt="" />
+            
+          </div>
+          <div className={style.popular_card}>
+            <img src="https://www.theknotnews.com/wp-content/uploads/2020/02/Shutterstock-Vacation-1500x1200.jpg" alt="" />
+            
+          </div>
+        </div>
+      </div>
+
+      <div className={style.CustomersReveiw}>
+        <div>
+        <h2>What <span>Our Customers Say ?</span></h2>
+        <span>View All <span className="material-symbols-outlined">trending_flat</span></span>
+        </div>
+        <div className={style.reviewDiv}>
+          <div>
+            <div className={style.reviewCard}>
+              <img src="https://sp-images.summitpost.org/947006.jpg?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=d877834568578388ef13b78e3cd7ba2b" alt="" />
+              <p><b>Mr.Andrew</b></p>
+              <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p>Really enjoyed the service of may find my trip never seen such a valuable an amazing service provided bycompany like theseopen cheap trip package andfully very method</p>
+            </div>
+            <div className={style.reviewCard}>
+              <img src="http://www.venmond.com/demo/vendroid/img/avatar/big.jpg" alt="" />
+              <p><b>Miss.Lucy</b></p>
+              <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p>Really enjoyed the service of may find my trip never seen such a valuable an amazing service provided bycompany like theseopen cheap trip package andfully very method</p>
+            </div>
+            <div className={style.reviewCard}>
+              <img src="https://i.pinimg.com/736x/a2/de/39/a2de3954697c636276192afea0a6f661--web-design-tools-extension.jpg" alt="" />
+              <p><b>Mr.Jack</b></p>
+              <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p>Really enjoyed the service of may find my trip never seen such a valuable an amazing service provided bycompany like theseopen cheap trip package andfully very method</p>
+            </div>
+            <div className={style.reviewCard}>
+              <img src="http://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg" alt="" />
+              <p><b>Miss. Katy</b></p>
+              <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p>Really enjoyed the service of may find my trip never seen such a valuable an amazing service provided bycompany like theseopen cheap trip package andfully very method</p>
+            </div>
+          </div>
+
+          <div className={style.newsLetter}>
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>We will keep your information secret & send you offer updates</p>
+            <div>
+              <input type="text" />
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
 
   )

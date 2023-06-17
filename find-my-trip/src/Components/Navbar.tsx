@@ -1,19 +1,19 @@
 import React from 'react'
 import { ColorModeSwitcher } from "../ColorModeSwitcher"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import style from '../styles/navbar.module.css'
 import { Button, Drawer, Input, useDisclosure, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay } from "@chakra-ui/react"
 
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const firstField = React.useRef()
+  let Navigate=useNavigate()
 
 
   return (
     <div className={style.navbar} style={{zIndex:"5"}}>
       <div className={style.logoDiv}>
-        <img src='https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb' alt="logo" />
+        <img onClick={()=>Navigate('/')} src='https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb' alt="logo" />
         <Input size='sm' placeholder='Serach for Destinations' border='1px' bg='transparent' borderRadius='25px' />
       </div>
       <div className={style.navRoutes}>
