@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className={style.navbar} style={{zIndex:"5"}}>
       <div className={style.logoDiv}>
-        <img src='https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb' alt="logo" />
+     <img  src='https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb' alt="logo" />
         <Input size='sm' placeholder='Serach for Destinations' border='1px' bg='transparent' borderRadius='25px' />
       </div>
       <div className={style.navRoutes}>
