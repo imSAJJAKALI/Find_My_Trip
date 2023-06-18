@@ -4,43 +4,44 @@ import { Box, VStack, HStack, UnorderedList, ListItem, List, Input, Button, Simp
 const Footer = () => {
   return (
     <Box bg="#1071db" color="white" p={8} display="flex" justifyContent="space-between" marginTop="20px" 
-     marginBottom="0px" >
+     marginBottom="-50px" >
       <VStack align="flex-start">
         <img src="https://github.com/imSAJJAKALI/purring-root-8/assets/112471219/be02d43f-211f-4200-8208-a8f4bb0271eb" alt="" width="250px" />
         <h5>REAL DESIGNS BY REAL ARISTS</h5>
         <h5>FOR REAL PEOPLE</h5>
       </VStack>
 
-      <HStack spacing={8}>
+      <HStack spacing={40}>
         <VStack align="flex-start">
-          <h5>PRODUCT</h5>
+          <h5>EXPLORE</h5>
           <List spacing={2}>
-            <ListItem>Jacket</ListItem>
-            <ListItem>Shirt</ListItem>
-            <ListItem>T-shirt</ListItem>
-            <ListItem>Dresses</ListItem>
-            <ListItem>Outwear</ListItem>
-            <ListItem>Bottoms</ListItem>
+          <ListItem>Destinations</ListItem>
+          <ListItem>Hotels</ListItem>
+          <ListItem>Flights</ListItem>
+          <ListItem>Tours</ListItem>
+          <ListItem>Car Rentals</ListItem>
           </List>
         </VStack>
 
         <VStack align="flex-start">
-          <h5>BUYING</h5>
+          <h5>PLAN</h5>
           <List spacing={2}>
-            <ListItem>Shop</ListItem>
-            <ListItem>Term of Use</ListItem>
-            <ListItem>Privacy</ListItem>
-            <ListItem>How it works</ListItem>
-            <ListItem>Customer Services</ListItem>
+          <ListItem>Travel Guides</ListItem>
+          <ListItem>Trip Planner</ListItem>
+          <ListItem>Packing Tips</ListItem>
+          <ListItem>Budgeting</ListItem>
+          <ListItem>Travel Insurance</ListItem>
           </List>
         </VStack>
 
         <VStack align="flex-start">
           <h5>SOCIAL</h5>
           <List spacing={2}>
-            <ListItem>Instagram</ListItem>
-            <ListItem>Facebook</ListItem>
-            <ListItem>Twitter</ListItem>
+          <ListItem>Instagram</ListItem>
+          <ListItem>Facebook</ListItem>
+          <ListItem>Twitter</ListItem>
+          <ListItem>LinkedIn</ListItem>
+          <ListItem>Pinterest</ListItem>
           </List>
         </VStack>
       </HStack>

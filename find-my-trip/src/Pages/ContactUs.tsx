@@ -1,6 +1,6 @@
 
 import {
-    Image,
+  Image,
   Container,
   Flex,
   Box,
@@ -27,6 +27,7 @@ import {
 } from 'react-icons/md';
 import { BsPerson } from 'react-icons/bs';
 import React from 'react'
+import {AiOutlineMail} from "react-icons/ai"
 
 import {
   FormControl,
@@ -34,15 +35,13 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react'
+import Download from "./Download_card.png"
 
 
 const ContactUs = () => {
   return (
-    <Box>
-       <Box position={"relative"}>
-        <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-WNAUHhlGr8XnEddCuYDdKe_lXfbZkV2Y2Q&usqp=CAU' width={"100%"} height={"40vh"} />
-        <Text position={"absolute"} top="50%" left={"50%"} transform="translate(-50%, -50%)" textAlign="center" fontSize={'6xl'} color={'white'}>Contact Us</Text>
-      </Box>
+    <Box >
+       
       <Box>
         <Box>
           <FormControl>
@@ -57,7 +56,9 @@ const ContactUs = () => {
               <FormHelperText>We'll never share your email.</FormHelperText>
           </FormControl>
         </Box>
+        
       </Box>
+      
     </Box>
   )
 }
@@ -65,10 +66,13 @@ const ContactUs = () => {
 
 export default function contact() {
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+    <Box position={"relative"} bg="#9DC4FB" >
+       <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-WNAUHhlGr8XnEddCuYDdKe_lXfbZkV2Y2Q&usqp=CAU' width={"100%"} height={"40vh"} />
+        <Text position={"absolute"} top="8%" left={"50%"} transform="translate(-50%, -50%)" textAlign="center" fontSize={'6xl'} color={'white'}>Contact Us</Text>
+    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" style={{padding:"50px"}}>
       <Flex>
         <Box
-          bg="#02054B"
+          bg="gray"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -101,7 +105,7 @@ export default function contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        hello@abc.com
+                        Admin@findmytrip.com
                       </Button>
                       <Button
                         size="md"
@@ -111,7 +115,7 @@ export default function contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                        Karnavati, India
+                        Bengaluru,Karnataka, India
                       </Button>
                     </VStack>
                   </Box>
@@ -149,7 +153,7 @@ export default function contact() {
               </WrapItem>
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
-                  <Box m={8} color="#0B0E3F">
+                  <Box m={8} color="#0D74FF">
                     <VStack spacing={5}>
                       <FormControl id="name">
                         <FormLabel>Your Name</FormLabel>
@@ -158,7 +162,7 @@ export default function contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" placeholder="Enter your Name" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -166,9 +170,10 @@ export default function contact() {
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
-                           
+                            children={<AiOutlineMail color="gray.800"/>}
+                            
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" placeholder="Enter your email address" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -178,7 +183,7 @@ export default function contact() {
                           _hover={{
                             borderRadius: 'gray.300',
                           }}
-                          placeholder="message"
+                          placeholder="Enter your message"
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
@@ -186,7 +191,7 @@ export default function contact() {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{}}>
+                          _hover={{color:"black", bg:"#115dc0"}}>
                           Send Message
                         </Button>
                       </FormControl>
@@ -199,5 +204,10 @@ export default function contact() {
         </Box>
       </Flex>
     </Container>
+  
+    <Box width="90%" margin="auto" marginBottom="-20px" >
+        <img src={Download} alt="" />
+      </Box>
+    </Box>
   );
 }
