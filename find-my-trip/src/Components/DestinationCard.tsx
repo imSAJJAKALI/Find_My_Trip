@@ -21,10 +21,13 @@ const DestinationCard = ({id,image,name,days,price,stars,category,details}:Desti
     <Text fontSize="16px" mr="auto" fontWeight="bold">
      {days}
     </Text>
+   
     <Text fontSize="16px" fontWeight="bold">
-      * * * * *
+      ⭐⭐⭐⭐⭐
     </Text>
+   
   </Flex>
+
   <Flex p="16px" alignItems="center">
     <Text fontSize="20px" fontWeight="bold">
       Price: ₹{price}
@@ -34,6 +37,9 @@ const DestinationCard = ({id,image,name,days,price,stars,category,details}:Desti
       Book Now
     </Button>
   </Flex>
+  <Text fontSize="14px" color="gray.500" textAlign="center" mt="8px">
+  Unforgettable Journeys Await!
+</Text>
 </Box>
   )
 }

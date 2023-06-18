@@ -221,7 +221,112 @@
      "category":"adventures",
      "details":"Singapore is a delight for adventure buffs. You can expect hot and humid weather. The pilgrimage sites at Rishikesh are also worth exploring."
      
+    },
+    {
+      "id": 19,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWR7JEoAobVpENr87A1oNuC1u6OTRg1g1rDzChAMLKGAQIs6y1ysHkS7nWHdz95BAYeY&usqp=CAU",
+      "name": "Paris",
+      "days": "5 to 10 days",
+      "price": 75000,
+      "stars": 5,
+      "category": "adventures",
+      "details": "Experience the romance of Paris with its iconic landmarks and exquisite cuisine."
+    },
+    {
+      "id": 20,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQK1scUrk5m-lTjULWceJsW7VtG6-bEn7C36FF35MUMTGhOvC7s0ieZVk3f1N3gbDBxgA&usqp=CAU",
+      "name": "New York",
+      "days": "4 to 7 days",
+      "price": 68000,
+      "stars": 4,
+      "category": "adventures",
+      "details": "Discover the bustling streets and vibrant culture of the Big Apple in New York City."
+    },
+    {
+      "id": 21,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5z7aTHClHLy-ATWDbI-SvQTntxW_BvqRCbFJG3ucriQnZCQmkni1XBeLr0NdcqW68eTE&usqp=CAU",
+      "name": "Tokyo",
+      "days": "7 to 12 days",
+      "price": 89000,
+      "stars": 5,
+      "category": "adventures",
+      "details": "Immerse yourself in the rich traditions and modern wonders of Tokyo, Japan's capital city."
+    },
+    {
+      "id": 22,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_VDzxVc9X_6iaXvWdpEodGrA0_e7yR_v3JcJqmjBq9KRyH05gLQrd2WSllNBshibLOE&usqp=CAU",
+      "name": "Bali",
+      "days": "6 to 9 days",
+      "price": 59000,
+      "stars": 4,
+      "category": "beach",
+      "details": "Relax and rejuvenate on the beautiful beaches of Bali while experiencing its unique culture and spirituality."
+    },
+    {
+      "id": 23,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXEo_bP2kcPrCcK8y-BpvZKRyQuPgGGArEckl7cLJpeIu1P7doFq9nrprQ0tvV2RKyt34&usqp=CAU",
+      "name": "Rome",
+      "days": "4 to 7 days",
+      "price": 71000,
+      "stars": 4,
+      "category": "beach",
+      "details": "Step back in time and explore the ancient ruins and architectural wonders of Rome, the Eternal City."
+    },
+    {
+      "id": 24,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUsrNUeMeXGHXURL0T1DmBkSJgnCZ-epNdY6e-lR29E9s2LnVyEgQe_-dbRDDkXg-jRM&usqp=CAU",
+      "name": "Singapore",
+      "days": "3 to 8 days",
+      "price": 43000,
+      "stars": 5,
+      "category": "adventures",
+      "details": "Singapore is a delight for adventure buffs. You can expect hot and humid weather. The pilgrimage sites at Rishikesh are also worth exploring."
+    },
+    {
+      "id": 25,
+      "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2021/09/maasai-people-masai-mara-kenya.jpg",
+      "name": "Masai Mara",
+      "days": "5 to 10 days",
+      "price": 55000,
+      "stars": 4,
+      "category": "adventures",
+      "details": "Embark on an exciting wildlife safari in Masai Mara, known for its abundant wildlife and stunning landscapes."
+    },
+    {
+      "id": 26,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1578Go0358OZsMeLnDKKbdtiQ_DlAnK-Tnk4aGvNqXwyWfQP2S8JpJx6_U6N5LSGG5-0&usqp=CAU",
+      "name": "Athens",
+      "days": "4 to 7 days",
+      "price": 62000,
+      "stars": 4,
+      "category": "beach",
+      "details": "Discover the historical wonders of Athens, including the Acropolis, ancient ruins, and iconic landmarks."
+    },
+    {
+      "id": 27,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDDXLblH6bFVGtpHJ_wprZiw3iY8UEfGFj_B6Yfh8XY8Yao8NJqCJGXMmS7wg6OKxy8I&usqp=CAU",
+      "name": "Shimla",
+      "days": "3 to 5 days",
+      "price": 35000,
+      "stars": 3,
+      "category": "hills-station",
+      "details": "Escape to the beautiful hill station of Shimla and enjoy its cool climate, scenic views, and colonial architecture."
+    },
+    {
+      "id": 28,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHaBNScTfvUxcZB1fXU_SATK38jo-2-MU1vJQ6E7RUgWBrPtn4ByyAIFSnCS0qdbgvWI&usqp=CAU",
+      "name": "Maldives",
+      "days": "4 to 7 days",
+      "price": 47000,
+      "stars": 5,
+      "category": "beach",
+      "details": "Indulge in a luxurious beach getaway in the Maldives, renowned for its pristine white-sand beaches and turquoise waters."
     }
+    
+    
+    
+    
+    
     
     
   ]
