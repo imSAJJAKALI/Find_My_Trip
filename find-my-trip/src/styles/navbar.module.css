@@ -13,6 +13,18 @@
     font-family: 'Poppins', sans-serif;
     position: absolute;
 }
+
+.profileIcon{
+    position: relative;
+}
+
+.authStatus{
+    font-size: 70px;
+    bottom: 8px;
+    left: -5px;
+    -webkit-text-stroke: 0.3px white;
+}
+
 .active{
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -53,6 +65,11 @@
 }
 
 @media screen and (max-width: 1150px){
+    .authStatus{
+        font-size: 70px;
+        bottom: 5px;
+        left: -10px;
+    }
     .navbar{
         font-size: 15px;
     }
@@ -97,6 +114,11 @@
 }
 
 @media screen and (max-width: 450px){
+    .authStatus{
+        font-size: 70px;
+        bottom: 3px;
+        left: -15px;
+    }
     .navbar>div>img{
         height: 40px;
      }
@@ -114,6 +136,11 @@
     }
 }
 @media screen and (max-width: 300px){
+    .authStatus{
+        font-size: 50px;
+        bottom: 3px;
+        left: -9px;
+    }
     .navbar>div>img{
         height: 30px;
      }
