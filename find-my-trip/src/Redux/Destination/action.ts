@@ -12,7 +12,7 @@ import {
 const url = 'http://localhost:9090/destination';
 
 export interface DestinationType {
-  id?: number;
+  id?: any;
   image: string;
   name: string;
   details: string;
@@ -25,13 +25,22 @@ export interface DestinationType {
 // Define action types
 type DispatchType = Dispatch<AnyAction>;
 
-export const destinationGetData = async( {dispatch,category}:{dispatch:any,category:string})  => {
+export const destinationGetData = async( {dispatch,category}:{dispatch:any,category?:string})  => {
   console.log(category)
   dispatch({ type: DESTINATION_DATA_LOADING });
   try {
-    const response: AxiosResponse<DestinationType[]> = await axios.get(`${url}?category=${category}`);
-    dispatch({ type: DESTINATION_DATA_SUCCESS, payload: response.data });
+    if(category){
+
+      const response: AxiosResponse<DestinationType[]> = await axios.get(`${url}?category=${category}`);
+      dispatch({ type: DESTINATION_DATA_SUCCESS, payload: response.data });
+    }else if(!category){
+      const response: AxiosResponse<DestinationType[]> = await axios.get(url);
+      dispatch({ type: DESTINATION_DATA_SUCCESS, payload: response.data });
+    }
   } catch (error) {
     dispatch({ type: DESTINATION_DATA_ERROR });
   }
 };
+
+
+
