@@ -8,6 +8,11 @@ import ContactUs from './ContactUs'
 import Navbar from '../Components/Navbar'
 import LoginPage from './Login'
 import SignupPage from './SignUp'
+import Admin from './Admin'
+import AddPlanForm from './AddPlan'
+import TotalPlans from './TotalPlans'
+import EditPage from './EditPage'
+
 
 export default function MainRoute() {
   return (
@@ -21,10 +26,12 @@ export default function MainRoute() {
       <Route path='/ContactUs' element={<ContactUs/>}/>
       
       <Route path='/login' element={<LoginPage/>}/>
-
+     <Route path='/admin' element={<Admin/>}/>
       <Route path='/signup' element={<SignupPage/>}/>
-
-    </Routes>
+      <Route path='/admin/addplan' element={<AddPlanForm/>}/>
+      <Route path='/admin/totalplans' element={<TotalPlans/>}/>
+      <Route path='/edit/:id' element={<EditPage/>} />
+      </Routes>
     </>
   )
 }

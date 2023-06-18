@@ -1,28 +1,22 @@
 {
-  "admin-user":[
-    {
-
-    }
-  ],
-  "user": [
-    {
-     
-    }
-  ],
-  "hotels": [
-    {
-      
-    }
-  ],
-  "flights":[
-    {
-
-    }
-  ] ,
-
-  "transport":[
+  "admin-user": [
     {}
   ],
+  "user": [
+    {}
+  ],
+  "hotels": [
+    {}
+  ],
+  "flights": [
+    {}
+  ],
+  "transport": [
+    {}
+  ],
+
+  
+
   "destination":[
     {
       "id":1,
@@ -275,6 +269,7 @@
     {
       "id": 24,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUsrNUeMeXGHXURL0T1DmBkSJgnCZ-epNdY6e-lR29E9s2LnVyEgQe_-dbRDDkXg-jRM&usqp=CAU",
+
       "name": "Singapore",
       "days": "3 to 8 days",
       "price": 43000,
@@ -283,6 +278,8 @@
       "details": "Singapore is a delight for adventure buffs. You can expect hot and humid weather. The pilgrimage sites at Rishikesh are also worth exploring."
     },
     {
+
+
       "id": 25,
       "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2021/09/maasai-people-masai-mara-kenya.jpg",
       "name": "Masai Mara",
@@ -322,11 +319,6 @@
       "category": "beach",
       "details": "Indulge in a luxurious beach getaway in the Maldives, renowned for its pristine white-sand beaches and turquoise waters."
     }
-    
-    
-    
-    
-    
     
     
   ]

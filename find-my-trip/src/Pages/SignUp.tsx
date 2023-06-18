@@ -19,16 +19,21 @@ import { FaPlane } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import {auth} from './firebaseAuth'
+import { SignupHandling } from '../Redux/Authentication/action';
+import { useDispatch, useSelector } from 'react-redux';
 const SignupPage = () => {
-  const [email,setEmail]=useState<string>("")
-  const [password,setPassword]=useState<string>("")
   const bg = useColorModeValue('white', 'gray.700');
   const color = useColorModeValue('black', 'white');
+  
+  const dispatch=useDispatch()
+
+  const {isLoading,isError,isSuccess}=useSelector((store:any)=>store.authReducer)
+
+  const [email,setEmail]=useState<string>("")
+  const [password,setPassword]=useState<string>("")
 
   const handleSubmit=(e:React.MouseEvent<HTMLButtonElement>)=>{
-   
-    createUserWithEmailAndPassword(auth,email,password).then((res)=>console.log(res))
-    .catch((err)=>console.log(err))
+   SignupHandling({dispatch,email,password})
   }
 
   return (

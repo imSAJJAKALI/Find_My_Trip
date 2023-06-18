@@ -19,16 +19,23 @@ import { FaPlane } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebaseAuth';
+import { useDispatch, useSelector } from 'react-redux';
+import { LoginHandling } from '../Redux/Authentication/action';
 
 const LoginPage = () => {
+  const dispatch =useDispatch()
   const [email,setEmail]=useState<string>("")
   const [password,setPassword]=useState<string>("")
+  const {isLoading,isError,isSuccess} =useSelector((store:any)=>store.authReducer)
+
+  console.log(isLoading)
+  // console.log(isSuccess)
+  // console.log(isError)
 
   const handleLogin=(e:React.MouseEvent<HTMLButtonElement> )=>{
-        
+      
+    LoginHandling({dispatch,email,password})
 
-    signInWithEmailAndPassword(auth,email,password).then((res)=>console.log(res))
-    .catch((err)=>console.log(err))
     
   }
 

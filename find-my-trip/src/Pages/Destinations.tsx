@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { destinationGetData } from '../Redux/Destination/action';
 
 const Destinations = () => {
-  const [category, setCategory] = useState<string>('beach');
+  const [category, setCategory] = useState<string>('');
   const dispatch = useDispatch();
   const { destination } = useSelector((store: any) => store.destReducer);
 
@@ -46,6 +46,7 @@ const Destinations = () => {
           </Text>
           <Spacer />
           <Select width={{ base: '100%', md: '130px' }} mt={{ base: '4', md: '0' }} onChange={handleChange}>
+            <option value="">Select Category</option>
             <option value="beach">Beaches</option>
             <option value="hills-station">Hills Station</option>
             <option value="adventures">Adventures</option>
