@@ -43,6 +43,23 @@ For Go to the website click the link:-https://legendary-monstera-f8fb81.netlify.
 GitHub Link:https://github.com/imSAJJAKALI/purring-root-8
 ## Screenshots
 
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/471262a6-334d-4c9f-b951-57f1f31adeb8)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/03ae9f95-7e2c-48a4-a2cb-fdc4098bb125)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/53ae8732-c834-4013-be04-58f1322a2ae6)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/e9cb7488-1993-47b8-b870-46e40fc26a83)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/b44a0e5a-4c8a-4945-8ada-ccfe53f47633)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/625c3f31-13f7-48a5-a0b4-cd4bbbe3bb07)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/2ed51cde-144d-45cc-816d-9e806c8c79fe)
+
+![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/39fbd967-3bc0-49a5-9ea7-fbf633e7c7cc)
+
+
 ## Contributing
 
 Contributions are always welcome!
