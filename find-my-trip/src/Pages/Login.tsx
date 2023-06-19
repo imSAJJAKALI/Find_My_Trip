@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { FiUser, FiLock } from 'react-icons/fi';
 import { FaPlane } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebaseAuth';
 import { useDispatch, useSelector } from 'react-redux';
@@ -27,7 +27,7 @@ const LoginPage = () => {
   const [email,setEmail]=useState<string>("")
   const [password,setPassword]=useState<string>("")
   const {isLoading,isError,isSuccess} =useSelector((store:any)=>store.authReducer)
-
+const navigate=useNavigate()
   console.log(isLoading)
   // console.log(isSuccess)
   // console.log(isError)
@@ -39,6 +39,9 @@ const LoginPage = () => {
     
   }
 
+  if(isSuccess){
+    navigate('/')
+  }
 
   const bg = useColorModeValue('white', 'gray.700');
   const color = useColorModeValue('black', 'white');
