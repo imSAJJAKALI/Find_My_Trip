@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box, Image, Text } from '@chakra-ui/react';
 import Card1 from "./BookingCard/Card1";
-import Card_post from "./Download_card.png";
+
 import FlightWings from './flightwings.png';
 import style from "../styles/bookig.module.css";
+import DownloadApp from '../Components/DownloadApp';
 
 const Booking = () => {
   return (
@@ -53,7 +54,7 @@ const Booking = () => {
           </Box>
         </Box>
         <Box display="flex" bg="#1071DB" borderRadius="15px" width="90%" mx="auto" mt={8}>
-          <Image src={Card_post} alt=""  />
+          <DownloadApp/>
         </Box>
       </Box>
     </Box>

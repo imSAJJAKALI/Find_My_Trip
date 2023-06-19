@@ -16,6 +16,7 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
     "firebase": "^9.22.2",
     "framer-motion": "^6.5.1",
     "json-server": "^0.17.3",

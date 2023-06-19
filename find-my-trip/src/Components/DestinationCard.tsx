@@ -1,6 +1,8 @@
 import { Box, Button, Flex, Image, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
 import { DestinationType } from '../Redux/Destination/action'
+import Popup from '../Pages/BookingCard/Bookpop'
+
 
 const DestinationCard = ({id,image,name,days,price,stars,category,details}:DestinationType) => {
   return (
@@ -33,9 +35,12 @@ const DestinationCard = ({id,image,name,days,price,stars,category,details}:Desti
       Price: ₹{price}
     </Text>
     <Spacer />
+   
     <Button colorScheme="teal" size="md">
-      Book Now
+      <Popup text="Book Now" />
     </Button>
+    
+    
   </Flex>
   <Text fontSize="14px" color="gray.500" textAlign="center" mt="8px">
   Unforgettable Journeys Await!

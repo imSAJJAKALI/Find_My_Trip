@@ -12,7 +12,13 @@ import Admin from './Admin'
 import AddPlanForm from './AddPlan'
 import TotalPlans from './TotalPlans'
 import EditPage from './EditPage'
+
 import PrivateRoute from '../Components/PrivateRoute'
+
+import PaymentPage from './PaymentPage'
+import Success from './BookingCard/Success'
+
+
 
 
 export default function MainRoute() {
@@ -35,6 +41,8 @@ export default function MainRoute() {
       <Route path='/admin/addplan' element={<AddPlanForm/>}/>
       <Route path='/admin/totalplans' element={<TotalPlans/>}/>
       <Route path='/edit/:id' element={<EditPage/>} />
+      <Route path='/payment' element={<PaymentPage/>} />
+      <Route path='/Success' element={<Success/>} />
       </Routes>
     </>
   )
