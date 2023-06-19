@@ -35,7 +35,10 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react'
-import Download from "./Download_card.png"
+import DownloadApp from '../Components/DownloadApp';
+import Popup from './BookingCard/Bookpop';
+// import PaymentPage from './PaymentPage';
+
 
 
 const ContactUs = () => {
@@ -65,6 +68,11 @@ const ContactUs = () => {
 
 
 export default function contact() {
+
+  const handleClick=()=>{
+    alert("Thanks for the feedback")
+  }
+
   return (
     <Box position={"relative"} bg="#9DC4FB" >
        <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-WNAUHhlGr8XnEddCuYDdKe_lXfbZkV2Y2Q&usqp=CAU' width={"100%"} height={"40vh"} />
@@ -162,7 +170,7 @@ export default function contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" placeholder="Enter your Name" />
+                          <Input type="text" size="md" placeholder="Enter your Name"  />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -191,7 +199,9 @@ export default function contact() {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
+                          onClick={handleClick}
                           _hover={{color:"black", bg:"#115dc0"}}>
+                           
                           Send Message
                         </Button>
                       </FormControl>
@@ -204,9 +214,12 @@ export default function contact() {
         </Box>
       </Flex>
     </Container>
-  
-    <Box width="90%" margin="auto" marginBottom="-20px" >
-        <img src={Download} alt="" />
+     <Box>
+      
+      <Popup/>
+     </Box>
+    <Box width="90%" margin="auto" marginBottom="-20px"  >
+        <DownloadApp/>
       </Box>
     </Box>
   );

@@ -9,6 +9,7 @@ import {
     Button,
     ButtonGroup 
   } from '@chakra-ui/react';
+import Popup from './Bookpop';
   
 //   const IMAGE =
 //     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8Xj_5Ic5qDBl_6n_uHbUvUOu9nv0wIR8_Q&usqp=CAU';
@@ -73,7 +74,9 @@ import {
             </Stack>
           </Stack>
           <br />
-          <Button colorScheme='blue'>Book Now</Button>
+          <Button colorScheme="teal">
+          <Popup text="Book Now" />
+          </Button>
         </Box>
         
       </Center>

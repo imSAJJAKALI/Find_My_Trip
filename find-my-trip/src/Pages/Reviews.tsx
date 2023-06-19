@@ -1,7 +1,8 @@
 import React from 'react'
 import { Box, Image, Text } from '@chakra-ui/react';
 import Card from "./BookingCard/ReviewCard"
-import Download from "./Download_card.png"
+
+import DownloadApp from '../Components/DownloadApp';
 
 const Reviews = () => {
   return (
@@ -14,7 +15,7 @@ const Reviews = () => {
         <Card/>
       </Box>
       <Box width="90%" margin="auto" >
-        <img src={Download} alt="" />
+       <DownloadApp/>
       </Box>
     </Box>
   )
