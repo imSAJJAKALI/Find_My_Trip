@@ -12,8 +12,12 @@ import Admin from './Admin'
 import AddPlanForm from './AddPlan'
 import TotalPlans from './TotalPlans'
 import EditPage from './EditPage'
+
+import PrivateRoute from '../Components/PrivateRoute'
+
 import PaymentPage from './PaymentPage'
 import Success from './BookingCard/Success'
+
 
 
 
@@ -24,7 +28,10 @@ export default function MainRoute() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/destinations' element={<Destinations/>}/>
-      <Route path='/booking' element={<Booking/>}/>
+      <Route path='/booking' element={
+     <Booking/>
+      
+      }/>
       <Route path='/reviews' element={<Reviews/>}/>
       <Route path='/ContactUs' element={<ContactUs/>}/>
       

@@ -1,4 +1,4 @@
-import { Box,Button, Center ,Flex} from '@chakra-ui/react'
+import { Box,Button, Center ,Flex, Text} from '@chakra-ui/react'
 import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { destinationGetData } from '../Redux/Destination/action'
@@ -17,13 +17,28 @@ destinationGetData({dispatch})
     
 
 <Box height="100vh" zIndex="10">
+<Box position="relative" backgroundColor={'#BCFFB9'} height={'180px'}>
+       
+       <Text
+         position="absolute"
+         top="50%"
+         left="50%"
+         transform="translate(-50%, -50%)"
+         textAlign="center"
+         fontSize={{ base: '4xl', md: '6xl' }}
+         color="white"
+       >
+            Admin Page
+       </Text>
+     </Box>
   <Flex
  
-    direction={{ base: 'column', md: 'row' }}
-    justify="space-evenly"
-   
-    p={10}
-  >
+ direction={{ base: 'column', md: 'row' }}
+ justify="space-evenly"
+ 
+ p={10}
+ >
+ 
     <Button
     mt={5}
       width={{ base: '100%', md: 'auto' }}
