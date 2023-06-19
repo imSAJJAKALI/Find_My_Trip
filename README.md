@@ -48,11 +48,11 @@ GitHub Link:https://github.com/imSAJJAKALI/purring-root-8
 Contributions are always welcome!
 ## Authors
  [Sajjak ALi](https://github.com/imSAJJAKALI) <br/>
- [Neelachari N H](https://github.com/Neelachari) <br/>
+ [Neelachari](https://github.com/Neelachari) <br/>
  [Karan](https://github.com/karanjarwal999) <br/>
 ## Linkedin
  [Sajjak](https://www.linkedin.com/in/sajjak-ali-8696a4223/) <br/>
- [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/) <br/>
+ [Neelachari](https://www.linkedin.com/in/neelesh-n-h-2704a7196/) <br/>
  [Karan](https://www.linkedin.com/in/karan-jarwal-86b890230/) 
  
 
