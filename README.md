@@ -33,24 +33,27 @@ Start the server
   npm run start
 ```
 ## Support
-For support, email -sajjak2506@gmail.com -neelachari34@gmail.com -karanjarwal999@gmail.com
+For support, email <br/>
+-sajjak2506@gmail.com <br/>
+-neelachari34@gmail.com <br/>
+-karanjarwal999@gmail.com <br/>
 
 For Go to the website click the link:-https://legendary-monstera-f8fb81.netlify.app/
 
-GitHub Link:https://github.com/Neelachari/supreme-honey-5251
+GitHub Link:https://github.com/imSAJJAKALI/purring-root-8
 ## Screenshots
 
 ## Contributing
 
 Contributions are always welcome!
 ## Authors
- [Sajjak ALi](https://github.com/imSAJJAKALI)
- [Neelachari N H](https://github.com/Neelachari)
- [Karan](https://github.com/karanjarwal999)
+ [Sajjak ALi](https://github.com/imSAJJAKALI) <br/>
+ [Neelachari N H](https://github.com/Neelachari) <br/>
+ [Karan](https://github.com/karanjarwal999) <br/>
 ## Linkedin
- [Sajjak](https://www.linkedin.com/in/sajjak-ali-8696a4223/)
- [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/)
- [Karan](https://www.linkedin.com/in/karan-jarwal-86b890230/)
+ [Sajjak](https://www.linkedin.com/in/sajjak-ali-8696a4223/) <br/>
+ [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/) <br/>
+ [Karan](https://www.linkedin.com/in/karan-jarwal-86b890230/) 
  
 
  
