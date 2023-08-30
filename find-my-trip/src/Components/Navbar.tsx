@@ -55,7 +55,7 @@ const Navbar = () => {
             <PopoverHeader ><p style={{fontSize:'15px'}}>{Auth}</p></PopoverHeader>
             <PopoverBody>{Auth==='Login IN'?
               <Button colorScheme='blue' onClick={()=>Navigate('/login')}>Login</Button>:
-              <Button colorScheme='blue' onClick={()=>signOut(auth)}>Logout</Button>}
+              <Button colorScheme='blue' onClick={()=>{signOut(auth);Navigate('/');}}>Logout</Button>}
             </PopoverBody>
           </PopoverContent>
         </Popover>

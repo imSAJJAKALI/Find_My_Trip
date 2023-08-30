@@ -13,6 +13,7 @@ import {
   FormHelperText,
   useColorModeValue,
   Center,
+  useToast,
 } from '@chakra-ui/react';
 import { FiUser, FiLock } from 'react-icons/fi';
 import { FaPlane } from 'react-icons/fa';
@@ -31,9 +32,36 @@ const SignupPage = () => {
 
   const [email,setEmail]=useState<string>("")
   const [password,setPassword]=useState<string>("")
+  const toast=useToast()
+
+ 
 
   const handleSubmit=(e:React.MouseEvent<HTMLButtonElement>)=>{
-   SignupHandling({dispatch,email,password})
+  
+   if(email=="" && password==""){
+    toast({
+      title: ` Please fill out all required fields.`,
+      position: "top",
+      isClosable: true,
+    })
+   }else if(email=="" || password==""){
+    toast({
+      title: ` Please fill out required fields.`,
+      position: "top",
+      isClosable: true,
+    })
+   }else{
+    toast({
+      title: ` Account created Successfully.`,
+      status:"success",
+      position: "top",
+      isClosable: true,
+      duration:1000
+    })
+    SignupHandling({dispatch,email,password})
+     setEmail("")
+     setPassword("")
+   }
   }
 
   return (
@@ -72,12 +100,7 @@ const SignupPage = () => {
               />
             </InputGroup>
           </FormControl>
-          <FormControl id="confirmPassword" mb={8}>
-            <InputGroup>
-              <InputLeftElement pointerEvents="none" children={<FiLock />} />
-              <Input type="password" placeholder="Confirm Password" />
-            </InputGroup>
-          </FormControl>
+          
           <Button colorScheme="blue" size="lg" width="full" onClick={handleSubmit}>
             Sign Up
           </Button>

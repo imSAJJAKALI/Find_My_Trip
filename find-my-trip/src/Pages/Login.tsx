@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {
   Box,
   Flex,
@@ -13,35 +13,68 @@ import {
   FormHelperText,
   useColorModeValue,
   Center,
+  useToast,
 } from '@chakra-ui/react';
 import { FiUser, FiLock } from 'react-icons/fi';
 import { FaPlane } from 'react-icons/fa';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebaseAuth';
 import { useDispatch, useSelector } from 'react-redux';
 import { LoginHandling } from '../Redux/Authentication/action';
 
 const LoginPage = () => {
+  const toast=useToast()
+  let location =useLocation()
   const dispatch =useDispatch()
   const [email,setEmail]=useState<string>("")
   const [password,setPassword]=useState<string>("")
-  const {isLoading,isError,isSuccess} =useSelector((store:any)=>store.authReducer)
+  const {isLoading,isError,isAuth,isSuccess} =useSelector((store:any)=>store.authReducer)
+  console.log(isAuth)
 const navigate=useNavigate()
   console.log(isLoading)
   // console.log(isSuccess)
   // console.log(isError)
 
   const handleLogin=(e:React.MouseEvent<HTMLButtonElement> )=>{
-      
-    LoginHandling({dispatch,email,password})
 
-    
+    if(email=="" && password==""){
+      toast({
+        title: ` Please fill out all required fields.`,
+        position: "top",
+        isClosable: true,
+      })
+     }else if(email=="" || password==""){
+      toast({
+        title: ` Please fill out required fields.`,
+        position: "top",
+        isClosable: true,
+      })
+     }else{
+      toast({
+        title: ` Login Successfully.`,
+        status:"success",
+        position: "top",
+        isClosable: true,
+        duration:1000
+      })
+      // SignupHandling({dispatch,email,password})
+      LoginHandling({dispatch,email,password})
+       setEmail("")
+       setPassword("")
+     }
   }
 
-  if(isSuccess){
-    navigate('/')
-  }
+  useEffect(()=>{
+
+    if(isSuccess){
+      navigate(location.state)
+     
+   }
+
+  },[isSuccess])
+
+  
 
   const bg = useColorModeValue('white', 'gray.700');
   const color = useColorModeValue('black', 'white');

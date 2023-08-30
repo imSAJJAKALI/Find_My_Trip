@@ -26,7 +26,7 @@ const AdminGraph: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<Destination[]>('http://localhost:9090/destination');
+        const response = await axios.get<Destination[]>('https://purringroot-serverr.onrender.com/destination');
         const data = response.data;
 
         if (data && data.length > 0) {

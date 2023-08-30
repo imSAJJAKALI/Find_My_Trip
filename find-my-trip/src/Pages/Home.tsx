@@ -6,9 +6,11 @@ import style from '../styles/home.module.css'
 import { TabList, TabPanel, TabPanels, Tabs, Tab } from '@chakra-ui/react'
 import DownloadApp from '../Components/DownloadApp'
 import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Home = () => {
-
+  const {isLoading,isError,isAuth,isSuccess} =useSelector((store:any)=>store.authReducer)
+console.log("private Routes",isAuth)
   const Navigate = useNavigate()
 
 

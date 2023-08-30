@@ -1,19 +1,17 @@
 import React,{useEffect,useState} from 'react';
 import { useSelector } from 'react-redux';
-import { Navigate } from 'react-router-dom';
+import { Navigate,useLocation } from 'react-router-dom';
 import { auth } from '../Pages/firebaseAuth';
 
+
 const PrivateRoute = ({ children }: any) => {
-  let [Auth, setAuth] = useState<string>('Login IN')
+  let location=useLocation()
+  const {isAuth} =useSelector((store:any)=>store.authReducer)
 
-
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => user == null ? setAuth('Login IN') : setAuth(user.email || ''))
-  }, [])
-
-if(Auth){
-  return <Navigate to='/login'/>
-}
+  if(!isAuth){
+    return <Navigate state={location.pathname} to={"/login"} />
+  }
+  
 
   return <div>{children}</div>;
 };

@@ -4,12 +4,14 @@ interface initialValueType {
     isLoading: boolean;
     isError: boolean;
     isSuccess: boolean;
+    isAuth:boolean;
 }
 
 const initialValue:initialValueType ={
     isLoading:false,
     isError:false,
     isSuccess:false,
+    isAuth:false,
 }
 
 export const reducer =(state=initialValue,{type,payload}:{type:string,payload:any})=>{
@@ -18,7 +20,8 @@ export const reducer =(state=initialValue,{type,payload}:{type:string,payload:an
         case LOGINSUCCESS:{
             return {
                 ...state,
-                isSuccess:true
+                isSuccess:true,
+                isAuth:true
             }
         }
         case LOGINLOADING:{
