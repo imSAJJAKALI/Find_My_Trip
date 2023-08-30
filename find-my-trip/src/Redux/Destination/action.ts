@@ -7,6 +7,7 @@ import {
   DESTINATION_DATA_ERROR,
   DESTINATION_DATA_LOADING,
   DESTINATION_DATA_SUCCESS,
+  PAYMENT_DATA_SUCCESS,
 } from "./actionType";
 
 const url = 'http://localhost:9090/destination';
@@ -42,5 +43,6 @@ export const destinationGetData = async( {dispatch,category}:{dispatch:any,categ
   }
 };
 
-
-
+export const paymentfun :any =  (obj: any) => (dispatch: any) =>  {
+  dispatch({ type: PAYMENT_DATA_SUCCESS, payload: obj }) 
+};

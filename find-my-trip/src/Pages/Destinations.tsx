@@ -28,6 +28,7 @@ const Destinations = () => {
   const [destinationsPerPage] = useState<number>(6);
   const dispatch = useDispatch();
   const { destination } = useSelector((store: any) => store.destReducer);
+  
 
   useEffect(() => {
     destinationGetData({ dispatch, category });
