@@ -75,7 +75,7 @@ import Popup from './Bookpop';
           </Stack>
           <br />
           <Button colorScheme="teal">
-          <Popup text="Book Now" />
+             Book Now
           </Button>
         </Box>
         

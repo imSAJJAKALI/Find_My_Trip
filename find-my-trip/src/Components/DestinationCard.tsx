@@ -1,11 +1,26 @@
 import { Box, Button, Flex, Image, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
-import { DestinationType } from '../Redux/Destination/action'
+import { DestinationType, paymentfun } from '../Redux/Destination/action'
 import Popup from '../Pages/BookingCard/Bookpop'
+
 import PrivateRoute from './PrivateRoute'
+
+import { useDispatch } from 'react-redux'
+
 
 
 const DestinationCard = ({id,image,name,days,price,stars,category,details}:DestinationType) => {
+  const dispatch=useDispatch()
+   
+
+  const handleClick = (id:any) => {
+    let obj = {
+      id, name, days, price, stars, category, details
+    };
+    return dispatch(paymentfun(obj))
+  };
+
+
   return (
     <Box
   boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
@@ -37,8 +52,11 @@ const DestinationCard = ({id,image,name,days,price,stars,category,details}:Desti
     </Text>
     <Spacer />
    
-   <Button colorScheme="teal" size="md">
+
    
+
+    <Button colorScheme="teal" size="md" onClick={()=>handleClick(id)}>
+
       <Popup text="Book Now" />
     
     </Button>
