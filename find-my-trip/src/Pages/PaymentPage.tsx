@@ -17,101 +17,97 @@ import {
   useDisclosure,
   Input,
   Image,
+  Text,
   Spinner,
-  Text
+  useToast,
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-import { useToast } from '@chakra-ui/react'
 import phonePeImage from './PhonePe.png';
 import paytmImage from './Paytm.png';
-import { useSelector } from 'react-redux';
 
 function PaymentPage() {
-  const Data=useSelector((store:any)=>store.destReducer.paymentData)
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedOption, setSelectedOption] = useState('creditCard');
   const [cardName, setCardName] = useState('');
-  const [cardprice, setCardprice] = useState(Data.price);
-  const [cardNumber, setCardNumber] = useState("");
+  const [cardNumber, setCardNumber] = useState('');
   const [expireDate, setExpireDate] = useState('');
-  const [ccvnumber, setCCVNumber] = useState('');
-  const [paytmnumber,setPaytmbumber]=useState('')
-  const [phonepaynumber,setphonepaynumber]=useState('')
+  const [ccvNumber, setCCVNumber] = useState('');
+  const [paytmNumber, setPaytmNumber] = useState('');
+  const [phonePeNumber, setPhonePeNumber] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
-  
-  const toast = useToast()
-  console.log(Data)
-  
+  const toast = useToast();
+
   const handlePaymentOptionChange = (value: string) => {
-   
-      setSelectedOption(value);
-    
-    // onOpen();
+    setSelectedOption(value);
   };
 
   const handlePayNowClick = () => {
-    // Perform payment logic based on selectedOption and card details
-    if(cardName==""||expireDate==""||ccvnumber==""){
-      toast({
-        title: ` Please fill out all required fields.`,
-        position: "top",
-        status: 'warning',
-        duration: 3000,
-        isClosable: true,
-      })
+    if (selectedOption === 'creditCard') {
+      // Validate credit card inputs
+      if (!cardName || !cardNumber || !expireDate || !ccvNumber) {
+        toast({
+          title: 'Please fill out all required fields for Credit Card.',
+          position: 'top',
+          status: 'warning',
+          duration: 3000,
+          isClosable: true,
+        });
+        return;
+      }
+    } else if (selectedOption === 'phonePe') {
+      // Validate PhonePe inputs
+      if (!phonePeNumber) {
+        toast({
+          title: 'Please fill out all required fields for PhonePe.',
+          position: 'top',
+          status: 'warning',
+          duration: 3000,
+          isClosable: true,
+        });
+        return;
+      }
+    } else if (selectedOption === 'paytm') {
+      // Validate Paytm inputs
+      if (!paytmNumber) {
+        toast({
+          title: 'Please fill out all required fields for Paytm.',
+          position: 'top',
+          status: 'warning',
+          duration: 3000,
+          isClosable: true,
+        });
+        return;
+      }
     }
-    else if(cardName==""||expireDate==""||ccvnumber==""){
-      toast({
-        title: ` Please fill out required fields`,
-        position: "top",
-        status: 'warning',
-        duration: 3000,
-        isClosable: true,
-      })
-    }
-    else if(cardNumber==""){
-      toast({
-        title: ` Please fill out required fields`,
-        position: "top",
-        status: 'warning',
-        duration: 3000,
-        isClosable: true,
-      })
-    }
-    else{
-      setTimeout(() => {
-        
-        navigate('/Success');
-        
-        }, 2000);
-        
-        onClose();
-    }
-    // Simulating payment success
-    
+
+    // Simulate payment processing
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      navigate('/Success');
+      onClose();
+    }, 2000);
   };
 
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <Box maxWidth="500px" mx="auto" p={4} border="3px solid teal" zIndex={5} >
-      {/* <Box maxWidth="500px" mx="auto" p={4}  zIndex={5}> */}
-      <Text fontSize="18px" fontWeight="bold">
-      Place: {Data.name}
-    </Text>
-    <Text fontSize="16px" fontWeight="300" color='gray.10' >
-      Number of Days : {Data.days}
-    </Text>
-    <Text fontSize="18px" fontWeight="bold" color='green'  >
-     Amount: ₹.{Data.price}
-    </Text>
-      {/* </Box> */}
+      <Box maxWidth="500px" mx="auto" p={4} border="3px solid teal" zIndex={5}>
+        <Text fontSize="18px" fontWeight="bold">
+          Place: Example Place
+        </Text>
+        <Text fontSize="16px" fontWeight="300" color="gray.10">
+          Number of Days: 5
+        </Text>
+        <Text fontSize="18px" fontWeight="bold" color="green">
+          Amount: ₹1000
+        </Text>
+
         <FormControl mb={4} isRequired>
           <FormLabel>Select Payment Method</FormLabel>
-          <RadioGroup  onChange={handlePaymentOptionChange} value={selectedOption}  >
-            <Stack direction="row" >
+          <RadioGroup onChange={handlePaymentOptionChange} value={selectedOption}>
+            <Stack direction="row">
               <Radio value="creditCard">Credit Card</Radio>
               <Radio value="phonePe">PhonePe</Radio>
               <Radio value="paytm">Paytm</Radio>
@@ -121,17 +117,6 @@ function PaymentPage() {
 
         {selectedOption === 'creditCard' && (
           <>
-           <FormControl mb={4} >
-              {/* <FormLabel>Amount </FormLabel> */}
-              {/* <Input
-                type="text"
-                maxLength={16}
-                placeholder="Enter card number"
-                value={cardprice}
-                onChange={(e) => setCardNumber(e.target.value)}
-              /> */}
-             <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text>
-            </FormControl>
             <FormControl mb={4} isRequired>
               <FormLabel>Name on Card</FormLabel>
               <Input
@@ -143,7 +128,6 @@ function PaymentPage() {
               />
             </FormControl>
 
-           
             <FormControl mb={4} isRequired>
               <FormLabel>Card Number</FormLabel>
               <Input
@@ -173,7 +157,7 @@ function PaymentPage() {
                 type="password"
                 maxLength={3}
                 placeholder="Enter CCV number"
-                value={ccvnumber}
+                value={ccvNumber}
                 isRequired
                 onChange={(e) => setCCVNumber(e.target.value)}
               />
@@ -184,50 +168,32 @@ function PaymentPage() {
         {selectedOption === 'phonePe' && (
           <Box>
             <Image src={phonePeImage} alt="PhonePe" maxH="100px" mx="auto" my={4} />
-            <FormControl mb={4} >
-              {/* <FormLabel>Amount </FormLabel>
+            <FormControl mb={4} isRequired>
+              <FormLabel>Enter PhonePe UPI</FormLabel>
               <Input
                 type="text"
-                maxLength={16}
-                placeholder="Enter card number"
-                value={cardprice}
-                fontWeight="bold" color='black'
-                // onChange={(e) => setCardNumber(e.target.value)}
-              /> */}
-              <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text>
+                placeholder="Enter your PhonePe UPI"
+                value={phonePeNumber}
+                isRequired
+                onChange={(e) => setPhonePeNumber(e.target.value)}
+              />
             </FormControl>
-            <Input
-              type="email"
-              placeholder="Enter your UPI"
-              value={phonepaynumber}
-              isRequired
-              onChange={(e) => setphonepaynumber(e.target.value)}
-            />
           </Box>
         )}
 
         {selectedOption === 'paytm' && (
           <Box>
             <Image src={paytmImage} alt="Paytm" maxH="100px" mx="auto" my={4} />
-            <FormControl mb={4} >
-              {/* <FormLabel>Amount </FormLabel>
+            <FormControl mb={4} isRequired>
+              <FormLabel>Enter Paytm UPI</FormLabel>
               <Input
                 type="text"
-                maxLength={16}
-                placeholder="Enter card number"
-                value={cardprice}
-                fontWeight="bold" color='black'
-                // onChange={(e) => setCardNumber(e.target.value)}
-              /> */}
-              <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text>
+                placeholder="Enter your Paytm UPI"
+                value={paytmNumber}
+                isRequired
+                onChange={(e) => setPaytmNumber(e.target.value)}
+              />
             </FormControl>
-            <Input
-              type="email"
-              placeholder="Enter your UPI"
-              value={paytmnumber}
-              isRequired
-              onChange={(e) => setPaytmbumber(e.target.value)}
-            />
           </Box>
         )}
 
@@ -238,23 +204,22 @@ function PaymentPage() {
             <ModalCloseButton />
             <ModalBody>
               <p>You have selected: {selectedOption}</p>
-              {/* Additional content or actions for payment confirmation */}
-              <Text fontSize="18px" fontWeight="bold" color='green'  >
-     Amount: ₹.{Data.price}
-    </Text>
+              <Text fontSize="18px" fontWeight="bold" color="green">
+                Amount: ₹1000
+              </Text>
             </ModalBody>
             <ModalFooter>
               <Button colorScheme="blue" mr={3} onClick={onClose}>
                 Close
               </Button>
-              <Button colorScheme="blue"  onClick={handlePayNowClick}>
-                Pay
+              <Button colorScheme="blue" onClick={handlePayNowClick} isLoading={isLoading}>
+                Pay Now
               </Button>
             </ModalFooter>
           </ModalContent>
         </Modal>
 
-        <Button colorScheme="blue"  mt={4} w="100%" onClick={onOpen}>
+        <Button colorScheme="blue" mt={4} w="100%" onClick={onOpen}>
           Pay Now
         </Button>
       </Box>
