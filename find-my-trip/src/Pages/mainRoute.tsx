@@ -17,6 +17,8 @@ import PrivateRoute from '../Components/PrivateRoute'
 
 import PaymentPage from './PaymentPage'
 import Success from './BookingCard/Success'
+import PaymentPage2 from './PaymentPage2'
+import { Myplans } from './Myplans'
 
 
 
@@ -54,7 +56,16 @@ export default function MainRoute() {
       </PrivateRoute>
       
       } />
+      <Route path='/payment2' element={
+     <PrivateRoute>
+
+        <PaymentPage2/>
+        </PrivateRoute>
+     
+      
+      } />
       <Route path='/Success' element={<Success/>} />
+      <Route path='/Myplans' element={<Myplans/>} />
       </Routes>
     </>
   )

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-function Popup({img, Price, Price1, Brand, city,text}:any) {
+function Popup2({img, Price, Price1, Brand, city,text}:any) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -32,7 +32,7 @@ function Popup({img, Price, Price1, Brand, city,text}:any) {
           </ModalBody>
 
           <ModalFooter>
-          <Link to="/payment">
+          <Link to="/payment2">
             <Button colorScheme="blue" mr={3} onClick={handleProceed}>
               Proceed
             </Button>
@@ -46,4 +46,4 @@ function Popup({img, Price, Price1, Brand, city,text}:any) {
   );
 }
 
-export default Popup;
+export default Popup2;

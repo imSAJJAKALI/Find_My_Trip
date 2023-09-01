@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ColorModeSwitcher } from "../ColorModeSwitcher"
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import style from '../styles/navbar.module.css'
-import { Button, Drawer, Input, useDisclosure, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Popover, PopoverTrigger, PopoverContent, PopoverCloseButton, PopoverArrow, PopoverHeader, PopoverBody } from "@chakra-ui/react"
+import { Button, Drawer, Input, useDisclosure, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Popover, PopoverTrigger, PopoverContent, PopoverCloseButton, PopoverArrow, PopoverHeader, PopoverBody, Text } from "@chakra-ui/react"
 import { auth } from '../Pages/firebaseAuth'
 import { signOut } from '@firebase/auth'
 import { scale } from 'style-value-types'
@@ -55,7 +55,7 @@ const Navbar = () => {
             <PopoverHeader ><p style={{fontSize:'15px'}}>{Auth}</p></PopoverHeader>
             <PopoverBody>{Auth==='Login IN'?
               <Button colorScheme='blue' onClick={()=>Navigate('/login')}>Login</Button>:
-              <Button colorScheme='blue' onClick={()=>{signOut(auth);Navigate('/');}}>Logout</Button>}
+              <Text><Link to="/Myplans">My Orders</Link><br/><Button colorScheme='blue' onClick={()=>{signOut(auth);Navigate('/');}}>Logout</Button></Text>}
             </PopoverBody>
           </PopoverContent>
         </Popover>
