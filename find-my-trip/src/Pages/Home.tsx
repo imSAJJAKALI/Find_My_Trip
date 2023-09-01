@@ -290,7 +290,7 @@ const Home = () => {
             
           </div>
           <div className={style.popular_card}>
-            <img src="https://www.theknotnews.com/wp-content/uploads/2020/02/Shutterstock-Vacation-1500x1200.jpg" alt="" />
+            <img src="https://www.theknot.com/tk-media/images/1dc24221-13f0-413f-864a-30698c62b50d~rs_768.h-cr_71.0.1031.720" alt="" />
             
           </div>
         </div>

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Box, Text, useToast, Button, Spinner, Center, Image } from '@chakra-ui/react';
+import { Box, Text, useToast, Button, Spinner, Center, Image  } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import Pay_suc from "../Payment_Successful.gif"
 
 const Success = (): JSX.Element => {
   const [spin, setSpin]=useState<boolean>(false)
   const  Navigate= useNavigate()
-
+  const toast = useToast()
   setTimeout(()=>{
     setSpin(true)
     
@@ -15,6 +15,13 @@ const Success = (): JSX.Element => {
 
   setTimeout(()=>{
     // setSpin(false)
+    toast({
+      title: ` Payment successful`,
+      status: 'success',
+      position: "top",
+      duration: 1000,
+      isClosable: true,
+    })
     Navigate("/")
   },4000)
  
@@ -23,14 +30,15 @@ const Success = (): JSX.Element => {
     <>
     <Center height={'100vh'} zIndex={5}>
     <Box >
-      
+     <Center><Text fontSize="40px" color='skyblue'>Payment Successful...</Text></Center> 
       {spin?<Image src={Pay_suc} width={"60%"} margin={"auto"} />:<Spinner
     thickness='4px'
     speed='0.65s'
-    emptyColor='gray.200'
+    emptyColor='skyblue.200'
     color='blue.500'
     size='xl'
   />}
+   <Center><Text fontSize="40px" color='skyblue' >Thank you plan your Trip agin with us...</Text></Center> 
     </Box>
     </Center>
     
