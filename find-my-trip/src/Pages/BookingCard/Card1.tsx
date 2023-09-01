@@ -9,13 +9,14 @@ import {
     Button,
     ButtonGroup 
   } from '@chakra-ui/react';
-import Popup from './Bookpop';
+import Popup2 from './Bookpop2';
   
 //   const IMAGE =
 //     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8Xj_5Ic5qDBl_6n_uHbUvUOu9nv0wIR8_Q&usqp=CAU';
   
   export default function ProductSimple({img, Price, Price1, Brand, city}:any) {
     return (
+      
       <Center py={12}>
         <Box
           role={'group'}
@@ -75,7 +76,8 @@ import Popup from './Bookpop';
           </Stack>
           <br />
           <Button colorScheme="teal">
-             Book Now
+          <Popup2 text="Book Now" />
+             
           </Button>
         </Box>
         
