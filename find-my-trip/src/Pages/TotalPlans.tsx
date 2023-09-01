@@ -33,6 +33,7 @@ destinationGetData({dispatch})
       </Box>
       <Box  width={'90%'} margin={'auto'} mt={10}>
 
+
       <Grid templateColumns="repeat(auto-fit, minmax(250px, 1fr))" gap={6}>
           {destination?.map((el: any) => (
             <PlansCard key={el.id} {...el} />

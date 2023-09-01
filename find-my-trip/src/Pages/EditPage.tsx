@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { DestinationType } from '../Redux/Destination/action';
 
-const url = 'http://localhost:9090/destination';
+const url = 'https://purringroot-serverr.onrender.com/destination';
 
 const EditPage = () => {
   const [singleData, setSingleData] = useState<DestinationType | null>(null);

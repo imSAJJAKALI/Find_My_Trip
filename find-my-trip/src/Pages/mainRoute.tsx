@@ -32,7 +32,13 @@ export default function MainRoute() {
      <Booking/>
       
       }/>
-      <Route path='/reviews' element={<Reviews/>}/>
+      <Route path='/reviews' element={
+     
+
+        <Reviews/>
+    
+      
+      }/>
       <Route path='/ContactUs' element={<ContactUs/>}/>
       
       <Route path='/login' element={<LoginPage/>}/>
@@ -41,7 +47,13 @@ export default function MainRoute() {
       <Route path='/admin/addplan' element={<AddPlanForm/>}/>
       <Route path='/admin/totalplans' element={<TotalPlans/>}/>
       <Route path='/edit/:id' element={<EditPage/>} />
-      <Route path='/payment' element={<PaymentPage/>} />
+      <Route path='/payment' element={
+      <PrivateRoute>
+
+        <PaymentPage/>
+      </PrivateRoute>
+      
+      } />
       <Route path='/Success' element={<Success/>} />
       </Routes>
     </>

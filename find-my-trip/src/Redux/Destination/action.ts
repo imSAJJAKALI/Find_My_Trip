@@ -10,7 +10,7 @@ import {
   PAYMENT_DATA_SUCCESS,
 } from "./actionType";
 
-const url = 'http://localhost:9090/destination';
+const url = 'https://purringroot-serverr.onrender.com/destination';
 
 export interface DestinationType {
   id?: any;

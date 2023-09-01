@@ -4,7 +4,7 @@ import { DestinationType, destinationGetData } from '../Redux/Destination/action
 import axios from 'axios'
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-const url = 'http://localhost:9090/destination';
+const url = 'https://purringroot-serverr.onrender.com/destination';
 const PlansCard = ({id,image,name,days,price,stars,category,details}:DestinationType) => {
     const dispatch=useDispatch()
     const handleDelete = (id: any) => {

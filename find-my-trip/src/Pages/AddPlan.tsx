@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import axios from 'axios';
 
-const url = 'https://expensive-pig-polo-shirt.cyclic.app/destination';
+const url = 'https://purringroot-serverr.onrender.com/destination';
 const AddPlanForm = () => {
   const [plan, setPlan] = useState<any>({
     image: '',
