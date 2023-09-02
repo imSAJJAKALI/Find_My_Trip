@@ -122,7 +122,7 @@ function PaymentPage2({img, Price, Price1, Brand, city}:any) {
                 value={cardprice}
                 onChange={(e) => setCardNumber(e.target.value)}
               /> */}
-             <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text>
+             {/* <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text> */}
             </FormControl>
             <FormControl mb={4} isRequired>
               <FormLabel>Name on Card</FormLabel>
@@ -211,7 +211,7 @@ function PaymentPage2({img, Price, Price1, Brand, city}:any) {
                 fontWeight="bold" color='black'
                 // onChange={(e) => setCardNumber(e.target.value)}
               /> */}
-              <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text>
+              {/* <Text fontWeight="bold" color='gray'> The Payable Amount is: ₹.{cardprice}</Text> */}
             </FormControl>
             <Input
               type="email"
@@ -231,9 +231,9 @@ function PaymentPage2({img, Price, Price1, Brand, city}:any) {
             <ModalBody>
               <p>You have selected: {selectedOption}</p>
               {/* Additional content or actions for payment confirmation */}
-              <Text fontSize="18px" fontWeight="bold" color='green'  >
+              {/* <Text fontSize="18px" fontWeight="bold" color='green'  >
      Amount: ₹.{Data.price}
-    </Text>
+    </Text> */}
             </ModalBody>
             <ModalFooter>
               <Button colorScheme="blue" mr={3} onClick={onClose}>

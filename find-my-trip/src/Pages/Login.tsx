@@ -123,7 +123,7 @@ const navigate=useNavigate()
           <Button colorScheme="blue" size="lg" width="full"
           onClick={handleLogin}
           >
-            Sign In
+            Log In
           </Button>
         </form>
         <Flex direction="column" mt={8}>
