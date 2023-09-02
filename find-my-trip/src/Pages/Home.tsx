@@ -31,7 +31,7 @@ console.log("private Routes",isAuth)
             </p>
             <div>
               <button onClick={() => Navigate('/Destinations')}>{'Plan a Trip >'}</button>
-              <button>Learn more</button>
+              <button onClick={() => Navigate('/Destinations')}>Learn more</button>
             </div>
             <p><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span></p>
           </div>
@@ -54,12 +54,20 @@ console.log("private Routes",isAuth)
                       <label htmlFor="form">From</label>
                       <select id="form">
                         <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Austrilia">Austrilia</option>
+                        <option value="America">America</option>
                       </select>
                     </div>
                     <div className={style.locationSelecter}>
                       <label htmlFor="to">To</label>
                       <select id="to">
                         <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Austrilia">Austrilia</option>
+                        <option value="America">America</option>
                       </select>
                     </div>
                     <div className={style.calenderSelecter}>
@@ -78,6 +86,10 @@ console.log("private Routes",isAuth)
                       <label htmlFor="form">Location</label>
                       <select id="form">
                         <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Austrilia">Austrilia</option>
+                        <option value="America">America</option>
                       </select>
                     </div>
                     <div className={style.calenderSelecter}>
@@ -100,12 +112,20 @@ console.log("private Routes",isAuth)
                       <label htmlFor="form">From</label>
                       <select id="form">
                         <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Austrilia">Austrilia</option>
+                        <option value="America">America</option>
                       </select>
                     </div>
                     <div className={style.locationSelecter}>
                       <label htmlFor="to">Destination</label>
                       <select id="to">
                         <option value="Canada">Canada</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India">India</option>
+                        <option value="Austrilia">Austrilia</option>
+                        <option value="America">America</option>
                       </select>
                     </div>
                     <div className={style.calenderSelecter}>

@@ -214,11 +214,11 @@ export default function contact() {
         </Box>
       </Flex>
     </Container>
-     <Box>
+     {/* <Box>
       
       <Popup/>
-     </Box>
-    <Box width="90%" margin="auto" marginBottom="-20px"  >
+     </Box> */}
+    <Box width="90%" margin="auto" marginBottom="-45px" padding="10px"  >
         <DownloadApp/>
       </Box>
     </Box>

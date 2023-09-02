@@ -18,6 +18,7 @@ import {
 import DestinationCard from '../Components/DestinationCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { destinationGetData } from '../Redux/Destination/action';
+import { Loding } from './Loding';
 
 const Destinations = () => {
   const [category, setCategory] = useState<string>('');
@@ -28,6 +29,7 @@ const Destinations = () => {
   const [destinationsPerPage] = useState<number>(6);
   const dispatch = useDispatch();
   const { destination } = useSelector((store: any) => store.destReducer);
+  const { isLoading } = useSelector((store: any) => store.destReducer);
   
 
   useEffect(() => {
@@ -121,7 +123,7 @@ const Destinations = () => {
         </Flex>
 
         <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))" gap={4}>
-          {currentDestinations.map((el: any) => (
+          {isLoading? <Loding/>: currentDestinations.map((el: any) => (
             <DestinationCard key={el.id} {...el} />
           ))}
         </Grid>
