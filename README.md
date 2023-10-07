@@ -7,6 +7,13 @@ Its a web application that provides a platform to book Traveling services. It is
 
 
 [website Url--](https://findmytrip.netlify.app/)
+
+## Login credentials
+```bash
+email: user@123 
+password: user@123
+```
+
 ## Tech Stack
 **Client:** Html , Css, React, Redux, TypeScript, Chakra UI 
 **Client Server Api:** Local Storage, JSON Server, Firebase.
