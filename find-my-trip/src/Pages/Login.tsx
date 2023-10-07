@@ -33,24 +33,33 @@ const LoginPage = () => {
   console.log(isAuth)
 const navigate=useNavigate()
   console.log(isLoading)
-  // console.log(isSuccess)
-  // console.log(isError)
+   console.log(isSuccess)
+   console.log(isError)
 
   const handleLogin=(e:React.MouseEvent<HTMLButtonElement> )=>{
 
     if(email=="" && password==""){
       toast({
-        title: ` Please fill out all required fields.`,
+        title: ` Please fill email and password.`,
         position: "top",
+        status:"warning",
+        duration:2000,
         isClosable: true,
       })
      }else if(email=="" || password==""){
       toast({
-        title: ` Please fill out required fields.`,
+        title: ` Please fill email or password.`,
         position: "top",
         isClosable: true,
+        status:"warning",
+        duration:2000,
       })
      }else{
+
+      LoginHandling({dispatch,email,password})
+      setEmail("")
+      setPassword("")
+
       toast({
         title: ` Login Successfully.`,
         status:"success",
@@ -59,9 +68,7 @@ const navigate=useNavigate()
         duration:1000
       })
       // SignupHandling({dispatch,email,password})
-      LoginHandling({dispatch,email,password})
-       setEmail("")
-       setPassword("")
+     
      }
   }
 
