@@ -10,7 +10,7 @@ Its a web application that provides a platform to book Traveling services. It is
 
 ## Login credentials
 ```bash
-email: user@123 
+email: user123@gmail.com
 password: user@123
 ```
 
