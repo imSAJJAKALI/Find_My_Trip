@@ -45,9 +45,9 @@ For support, email <br/>
 -neelachari34@gmail.com <br/>
 -karanjarwal999@gmail.com <br/>
 
-For Go to the website click the link:-https://legendary-monstera-f8fb81.netlify.app/
+For Go to the website click the link:-https://findmytrip.netlify.app/
 
-GitHub Link:https://github.com/imSAJJAKALI/purring-root-8
+GitHub Link:https://github.com/imSAJJAKALI/Find_My_Trip
 ## Screenshots
 
 ![image](https://github.com/imSAJJAKALI/purring-root-8/assets/112808279/471262a6-334d-4c9f-b951-57f1f31adeb8)
